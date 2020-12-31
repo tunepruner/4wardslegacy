@@ -1,7 +1,7 @@
 package com.tunepruner.fourwards.gui;
 
-import com.tunepruner.fourwards.data.TimeContainer;
 import com.tunepruner.fourwards.data.Data;
+import com.tunepruner.fourwards.data.TimeContainer;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
@@ -10,7 +10,6 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Group;
 import javafx.scene.control.Label;
-import javafx.scene.effect.DropShadow;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.SVGPath;

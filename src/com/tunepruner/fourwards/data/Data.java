@@ -15,16 +15,14 @@ import javax.xml.bind.annotation.XmlRootElement;
 import java.io.File;
 import java.io.StringWriter;
 import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.List;
 
 @XmlRootElement(name = "data")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Data {
-    private static boolean listHasBeenCreated = false;
+    private boolean listHasBeenCreated = false;
     @XmlElement(name = "time_container", type = TimeContainer.class)
     private static ObservableList<TimeContainer> list = FXCollections.observableArrayList();
-    private static LocalDate dateOfList = LocalDate.now();
+
 
     public static ObservableList<TimeContainer> getList() {
         return list;

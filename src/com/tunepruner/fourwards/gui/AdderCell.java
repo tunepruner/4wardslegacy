@@ -10,6 +10,7 @@ import javafx.util.Duration;
 import java.awt.*;
 
 public class AdderCell extends Cell {
+    public static final String STRING_TO_DISPLAY = "Drag to add new";
     private static AdderCell adderCell;
 
     public AdderCell(ListArea listArea, String string) {
@@ -36,8 +37,8 @@ public class AdderCell extends Cell {
     }
 
     public static AdderCell getInstance(ListArea listArea) {
-        adderCell = new AdderCell(listArea, "Drag to add new");
-        adderCell.designCell("Drag to add new");
+        adderCell = new AdderCell(listArea, STRING_TO_DISPLAY);
+        adderCell.designCell(STRING_TO_DISPLAY);
         adderCell.revealCell(listArea.getStartAreaPane());
         return adderCell;
     }

@@ -10,17 +10,9 @@ import javax.xml.bind.annotation.*;
 //@XmlType(propOrder={"topicName"})
 public class TimeContainer {
     @XmlElement(name = "topic", type = Topic.class)
-    private Topic topic;
-    private String topicName;
+    private Topic topic;/*must get from list of Topics*/
+    private Day day;/*must get from list of Days*/
     public static final String TOPIC_NAME="topicName";
-
-    public String getTopicName() {
-        return topicName;
-    }
-
-    public void setTopicName(String topicName) {
-        this.topicName = topicName;
-    }
 
     public Topic getTopic() {
         return topic;

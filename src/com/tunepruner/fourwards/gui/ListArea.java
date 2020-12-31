@@ -1,7 +1,7 @@
 package com.tunepruner.fourwards.gui;
 
-import com.tunepruner.fourwards.data.TimeContainer;
 import com.tunepruner.fourwards.data.Data;
+import com.tunepruner.fourwards.data.TimeContainer;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.scene.effect.DropShadow;
