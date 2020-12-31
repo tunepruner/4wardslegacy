@@ -89,4 +89,7 @@ public class Grid {
         return animationPermitted;
     }
 
+    public Point determineCellPosition(String string) {
+        return gridMap.get(Data.indexOf(string));
+    }
 }

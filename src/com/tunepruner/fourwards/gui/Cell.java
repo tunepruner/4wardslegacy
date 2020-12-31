@@ -45,10 +45,6 @@ public class Cell {
         this.listArea = listArea;
     }
 
-    public Point determineCellPosition() {
-        return listArea.getGrid().getGridMap().get(Data.indexOf(string));
-    }
-
     public void designCell(String string) {
         Pane paneInsideHBox1 = new Pane();
         Pane paneInsideHBox2 = new Pane();
@@ -151,7 +147,7 @@ public class Cell {
 
         });
 
-        Point point = determineCellPosition();
+        Point point = listArea.getGrid().determineCellPosition(string);
 
         cellGroup.setLayoutX(point.x);
         cellGroup.setLayoutY(point.y);
