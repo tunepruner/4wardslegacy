@@ -6,8 +6,9 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
-@XmlAccessorType(XmlAccessType.PROPERTY)
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Topic {
+    @XmlAttribute
     private String name;
 
     public Topic() {
@@ -16,7 +17,7 @@ public class Topic {
     public Topic(String name) {
         this.name = name;
     }
-    @XmlAttribute
+
     public String getName() {
         return name;
     }

@@ -78,20 +78,29 @@ public class Cell {
         hBox.setMaxWidth(listArea.getCellWidth());
         hBox.setMinHeight(listArea.getCellHeight());
         hBox.setMaxHeight(listArea.getCellHeight());
-        hBox.setBackground(new Background(new BackgroundFill(listArea.COLOR_OF_CELLS, CornerRadii.EMPTY, Insets.EMPTY)));
+        Background hBoxBackground = new Background(new BackgroundFill(listArea.COLOR_OF_CELLS, CornerRadii.EMPTY, Insets.EMPTY));
+        hBox.setBackground(hBoxBackground);
         hBox.setManaged(true);
 
         progressBar.setRotate(-90);
         progressBar.setScaleX(3.5);
         progressBar.setOpacity(1);
         progressBar.setManaged(true);
-        progressBar.setStyle("-fx-control-inner-background: rgb(1, 500, 500); -fx-text-box-border: rgb(100, 200, 250); -fx-background: rgb(1, 500, 500); -fx-accent: rgb(100, 200, 250); ");
+        progressBar.setStyle(
+                "-fx-control-inner-background: rgb(1, 150, 150);" +
+                        " -fx-text-box-border: rgb(1, 150, 150);" +
+                        " -fx-background: rgb(1, 100, 150);" +
+                        " -fx-accent: rgb(1, 100, 150); ");
+        progressBar.setBackground(hBoxBackground);
+
 
         btn.setOpaqueInsets(new Insets(0));
         btn.setScaleX(.6);
         btn.setScaleY(.6);
         btn.setAlignment(Pos.CENTER);
         btn.setStyle("-fx-background-color: rgb(1, 200, 500);");
+//        btn.setBackground(new Background(new BackgroundFill(listArea.COLOR_OF_INNER_PANE, CornerRadii.EMPTY, Insets.EMPTY)));
+        btn.setEffect(listArea.dropShadow);
 
         vBox.setMinWidth(listArea.getCellHeight());
         vBox.setMaxWidth(listArea.getCellHeight());
@@ -101,7 +110,7 @@ public class Cell {
         vBox.setManaged(true);
 
         label.setAlignment(Pos.BOTTOM_CENTER);
-        label.setTextFill(Color.WHITE);
+        label.setTextFill(listArea.COLOR_OF_SOFT_ACCENTS);
 
         leftTriangle.setFill(listArea.COLOR_OF_CELLS);
         rightTriangle.setFill(listArea.COLOR_OF_CELLS);
@@ -132,7 +141,7 @@ public class Cell {
             Label lbl3 = new Label("the other thing");
             lbl3.setTextFill(Color.WHITE);
             VBox vBox1 = new VBox();
-            vBox1.setBackground(new Background(new BackgroundFill(new Color(.1, .5, .7, .5), CornerRadii.EMPTY, Insets.EMPTY)));
+            vBox1.setBackground(new Background(new BackgroundFill(listArea.COLOR_OF_CELLS, CornerRadii.EMPTY, Insets.EMPTY)));
             vBox1.setPadding(new Insets(5, 10, 5, 10));
             vBox1.getChildren().addAll(lbl1, lbl2, lbl3);
             popup.getContent().addAll(vBox1);
@@ -147,7 +156,7 @@ public class Cell {
 
         cellGroup.setLayoutX(point.x);
         cellGroup.setLayoutY(point.y);
-        cellGroup.setEffect(new DropShadow(3, Color.BLACK));
+        cellGroup.setEffect(listArea.dropShadow);
 
         handleDragAndDrop();
 

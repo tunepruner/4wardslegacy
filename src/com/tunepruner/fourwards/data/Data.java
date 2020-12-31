@@ -29,24 +29,6 @@ public class Data {
     public static ObservableList<TimeContainer> getList() {
         return list;
     }
-
-    public static LocalDate getDateOfList() {
-        return dateOfList;
-    }
-//
-//    public static void createListOfTimeContainersForTesting(ListArea listArea) {
-//        if (!listHasBeenCreated) {
-//            List<String> listOfStrings = Arrays.asList("The strings", "seen here", "are persisted", "in a text file!", "-------", "The cells", "are made of", "custom shapes!", "--------", "The positioning", "is determined", "in a custom", "grid of points!", "---------", "It supports", "SCROLLING!", "----------", "It also", "supports", "DROP", "DRAG AND", "REORDERING!");
-//            for ( String string : listOfStrings ) {
-//                TimeContainer timeContainer = new TimeContainer(string);
-//                list.add(timeContainer);
-//            }
-//            dateOfList = LocalDate.now();
-//            listHasBeenCreated = true;
-//        }
-//        persist();
-//    }
-
     public static Integer indexOf(TimeContainer timeContainerToEvaluate) {
         Integer indexOfTimeContainer = null;
         for ( int i = 0; i > list.size(); i++ ) {

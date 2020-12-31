@@ -44,8 +44,8 @@ public class Grid {
         int resultingIndex = currentDraggedFromIndex;
         for ( int i = 0; i < listArea.getGrid().getGridMap().size(); i++) {
             if (
-                    Math.abs(currentPoint.y - (listArea.getGrid().getGridMap().get(i).y)) < listArea.getCellHeight() &&
-                    Math.abs(currentPoint.x - (listArea.getGrid().getGridMap().get(i).x)) < listArea.getCellWidth())
+                    Math.abs(currentPoint.y - (gridMap.get(i).y)) < listArea.getCellHeight() &&
+                    Math.abs(currentPoint.x - (gridMap.get(i).x)) < listArea.getCellWidth())
             {
                 resultingIndex =  i;
             }
@@ -56,47 +56,35 @@ public class Grid {
 
     public boolean animationPermitted(ListArea listArea, Cell cell) {
         boolean isInList = Data.contains(cell.string);
-        boolean isOnGrid = false;
-        boolean isAtCorrectIndex;
+        boolean isInListArea = false;
         boolean needsAnUpdate = false;
-        boolean isCurrentlyDragging;
-        boolean justGotDropped;
+        boolean justGotDropped = false;
         boolean animationPermitted;
-        for ( int i = 0; i < listArea.getGrid().getGridMap().size(); i++ ) {
-            if (cell.currentPosition.equals(listArea.getGrid().getGridMap().get(i))) {
-                isOnGrid = true;
+
+        for ( int i = 0; i < gridMap.size(); i++ ) {
+            if (cell.currentPosition.equals(gridMap.get(i))) {
+                isInListArea = true;
+                cell.isInListArea = true;
             }
         }
-        if (isOnGrid) {
-            cell.isInListArea = true;
-        }
 
-        if (isOnGrid && isInList) {
-            if (Data.indexOf(cell.string) != listArea.getGrid().getIndexOfXY(listArea, cell.currentPosition)) {
+        if (isInListArea && isInList) {
+            if (Data.indexOf(cell.string) != getIndexOfXY(listArea, cell.currentPosition)) {
                 needsAnUpdate = true;
-
             }
         }
 
-        isCurrentlyDragging = !isInList;
-
-        justGotDropped = false;
         if (isInList) {
-            if (!isOnGrid) {
-                if (!cell.isInListArea) {
-                    justGotDropped = true;
-                }
+            if (!isInListArea) {
+                justGotDropped = true;
             }
         }
 
         if (needsAnUpdate || justGotDropped) {
             animationPermitted = true;
-        } else if (isCurrentlyDragging) {
-            animationPermitted = false;
         } else {
             animationPermitted = false;
         }
-        cell.isInListArea = false;
 
         return animationPermitted;
     }
