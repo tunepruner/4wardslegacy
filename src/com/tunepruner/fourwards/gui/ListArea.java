@@ -1,7 +1,7 @@
 package com.tunepruner.fourwards.gui;
 
-import com.tunepruner.fourwards.data.Data;
-import com.tunepruner.fourwards.data.TimeContainer;
+import com.tunepruner.fourwards.data.olddata.Data;
+import com.tunepruner.fourwards.data.olddata.TimeContainer;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.scene.effect.DropShadow;
@@ -157,7 +157,7 @@ public class ListArea{
 
     public void displayAllCells() {
         setGrid(new Grid(this));
-        ObservableList<TimeContainer> listOfTC = Data.getList();
+        ObservableList<TimeContainer> listOfTC = Data.getDataFromFile();
         for ( int i = 0; i < listOfTC.size(); i++ ) {
             String stringAtIndex = listOfTC.get(i).getTopic().getName();
             Cell cell = new Cell(this, stringAtIndex);

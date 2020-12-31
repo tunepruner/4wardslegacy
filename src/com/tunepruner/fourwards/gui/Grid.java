@@ -1,6 +1,6 @@
 package com.tunepruner.fourwards.gui;
 
-import com.tunepruner.fourwards.data.Data;
+import com.tunepruner.fourwards.data.olddata.Data;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableMap;
 
@@ -28,7 +28,7 @@ public class Grid {
         double yGridFactor = -(listArea.getCellHeight() + listArea.getCellPadding());
 
         /*Distribute points on that line.*/
-        for ( int i = 0; i < Data.getList().size(); i++) {
+        for ( int i = 0; i < Data.getDataFromFile().size(); i++) {
             Point startingPoint = new Point(
                     listArea.getTopLeft().x - listArea.getCellWidth()*2 - listArea.getCellHeight(),
                     listArea.getTopLeft().y + listArea.getAreaHeight());
@@ -89,7 +89,4 @@ public class Grid {
         return animationPermitted;
     }
 
-    public Point determineCellPosition(String string) {
-        return gridMap.get(Data.indexOf(string));
-    }
 }

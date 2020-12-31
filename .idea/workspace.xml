@@ -5,8 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac3e2c89-37d1-41a7-bac6-b3f85d8f1abf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/WorkTopic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/daylist/Day.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/daylist/DayListItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/daylist/PushEnd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/daylist/PushStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/log/ClockTimeEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/log/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/log/TimeAllottment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/plan/AdjustedPlan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/plan/AdjustedPlanItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/plan/Plan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/plan/PlanItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/Day.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/Day.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/Day.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/Day.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/Days.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/Days.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/TimeContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/TimeContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/Topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/Topic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/Topics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/Topics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Grid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/ListArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/ListArea.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +82,9 @@
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="com.tunepruner.fourwards.data.ListFromTextFile" />
     </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tunepruner.fourwards.data.newdata" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -70,7 +94,7 @@
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Data" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tunepruner.fourwards.data.Data" />
+      <option name="MAIN_CLASS_NAME" value="com.tunepruner.fourwards.data.olddata.Data" />
       <module name="4wards" />
       <extension name="coverage">
         <pattern>
@@ -96,7 +120,7 @@
       </method>
     </configuration>
     <configuration name="Days" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tunepruner.fourwards.data.Days" />
+      <option name="MAIN_CLASS_NAME" value="com.tunepruner.fourwards.data.olddata.Days" />
       <module name="4wards" />
       <extension name="coverage">
         <pattern>
@@ -185,11 +209,11 @@
       <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="462" y="209" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.23.1280.723@0.23.1280.723" timestamp="1609185638730" />
-    <state x="137" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1609433003275">
+    <state x="137" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1609445051845">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state x="137" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.715@0.23.1280.715" timestamp="1608683734875" />
-    <state x="137" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.721@0.23.1280.721" timestamp="1609433003275" />
+    <state x="137" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.721@0.23.1280.721" timestamp="1609445051845" />
     <state x="0" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.723@0.23.1280.723" timestamp="1609206129308" />
     <state x="59" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.724@0.23.1280.724" timestamp="1608998395196" />
     <state x="378" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608829972326">
@@ -323,11 +347,11 @@
     </state>
     <state x="341" y="164" key="refactoring.ChangeSignatureDialog/0.23.1280.723@0.23.1280.723" timestamp="1609201726961" />
     <state x="341" y="164" key="refactoring.ChangeSignatureDialog/0.23.1280.724@0.23.1280.724" timestamp="1609025348056" />
-    <state x="305" y="63" width="670" height="334" key="search.everywhere.popup" timestamp="1609001194280">
-      <screen x="0" y="23" width="1280" height="724" />
+    <state x="305" y="63" width="670" height="681" key="search.everywhere.popup" timestamp="1609449818777">
+      <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state x="305" y="63" width="670" height="676" key="search.everywhere.popup/0.23.1280.716@0.23.1280.716" timestamp="1608760699163" />
-    <state x="305" y="63" width="670" height="681" key="search.everywhere.popup/0.23.1280.721@0.23.1280.721" timestamp="1608681416471" />
+    <state x="305" y="63" width="670" height="681" key="search.everywhere.popup/0.23.1280.721@0.23.1280.721" timestamp="1609449818777" />
     <state x="305" y="63" width="670" height="333" key="search.everywhere.popup/0.23.1280.723@0.23.1280.723" timestamp="1608918310264" />
     <state x="305" y="63" width="670" height="334" key="search.everywhere.popup/0.23.1280.724@0.23.1280.724" timestamp="1609001194280" />
   </component>
@@ -341,42 +365,42 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Cell.java</url>
-          <line>215</line>
+          <line>211</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Cell.java</url>
-          <line>216</line>
+          <line>212</line>
           <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Cell.java</url>
-          <line>218</line>
+          <line>214</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/tunepruner/fourwards/data/Data.java</url>
-          <line>69</line>
+          <url>file://$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/Data.java</url>
+          <line>68</line>
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/tunepruner/fourwards/data/Data.java</url>
-          <line>67</line>
+          <url>file://$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/Data.java</url>
+          <line>66</line>
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/tunepruner/fourwards/data/Data.java</url>
-          <line>70</line>
+          <url>file://$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/Data.java</url>
+          <line>69</line>
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/tunepruner/fourwards/data/Data.java</url>
-          <line>104</line>
+          <url>file://$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/Data.java</url>
+          <line>103</line>
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/tunepruner/fourwards/data/Data.java</url>
-          <line>100</line>
+          <url>file://$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/Data.java</url>
+          <line>99</line>
           <option name="timeStamp" value="69" />
         </line-breakpoint>
       </breakpoints>

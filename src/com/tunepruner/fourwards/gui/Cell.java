@@ -1,7 +1,7 @@
 package com.tunepruner.fourwards.gui;
 
-import com.tunepruner.fourwards.data.Data;
-import com.tunepruner.fourwards.data.TimeContainer;
+import com.tunepruner.fourwards.data.olddata.Data;
+import com.tunepruner.fourwards.data.olddata.TimeContainer;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
@@ -147,7 +147,7 @@ public class Cell {
 
         });
 
-        Point point = listArea.getGrid().determineCellPosition(string);
+        Point point = determineCellPosition();
 
         cellGroup.setLayoutX(point.x);
         cellGroup.setLayoutY(point.y);
@@ -156,6 +156,10 @@ public class Cell {
         handleDragAndDrop();
 
         cueReposition(listArea);
+    }
+
+    public Point determineCellPosition() {
+        return listArea.getGrid().getGridMap().get(Data.indexOf(string));
     }
 
     public void revealCell(Pane pane) {
@@ -248,7 +252,7 @@ public class Cell {
         // While making them mutually exclusive would be easier,
         // the product will feel much more complete if they
         // can both happen at once.
-        Data.getList().addListener((ListChangeListener.Change<? extends TimeContainer> c) -> {
+        Data.getDataFromFile().addListener((ListChangeListener.Change<? extends TimeContainer> c) -> {
             while (c.next()) {
 
                 if (c.wasAdded()) {

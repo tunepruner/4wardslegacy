@@ -1,7 +1,6 @@
-package com.tunepruner.fourwards.data;
+package com.tunepruner.fourwards.data.olddata;
 
-import com.tunepruner.fourwards.gui.Cell;
-import com.tunepruner.fourwards.gui.ListArea;
+import com.tunepruner.fourwards.data.Topic;
 
 import javax.xml.bind.annotation.*;
 
