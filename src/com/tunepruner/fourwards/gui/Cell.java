@@ -1,6 +1,6 @@
 package com.tunepruner.fourwards.gui;
 
-import com.tunepruner.fourwards.data.olddata.Data;
+import com.tunepruner.fourwards.data.general.Data;
 import com.tunepruner.fourwards.data.plan.*;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;

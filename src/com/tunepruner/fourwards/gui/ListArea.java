@@ -1,6 +1,6 @@
 package com.tunepruner.fourwards.gui;
 
-import com.tunepruner.fourwards.data.olddata.Data;
+import com.tunepruner.fourwards.data.general.Data;
 import com.tunepruner.fourwards.data.plan.PlanItem;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
@@ -60,8 +60,8 @@ public class ListArea{
         this.startAreaPane = new Pane();
         this.clipPane = new Pane();
         this.adderCell = AdderCell.getInstance(this);
-        Data.readFromFile();
-        Data.persist();
+//        Data.readFromFile();
+//        Data.persist();
     }
 
     public void setGrid(Grid grid) {
