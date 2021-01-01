@@ -1,7 +1,7 @@
 package com.tunepruner.fourwards.gui;
 
 import com.tunepruner.fourwards.data.olddata.Data;
-import com.tunepruner.fourwards.data.olddata.TimeContainer;
+import com.tunepruner.fourwards.data.plan.PlanItem;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.scene.effect.DropShadow;
@@ -10,8 +10,8 @@ import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
-import javafx.stage.Stage;
 import javafx.scene.shape.Rectangle;
+import javafx.stage.Stage;
 
 import javax.xml.bind.JAXBException;
 import java.awt.*;
@@ -157,9 +157,9 @@ public class ListArea{
 
     public void displayAllCells() {
         setGrid(new Grid(this));
-        ObservableList<TimeContainer> listOfTC = Data.getDataFromFile();
-        for ( int i = 0; i < listOfTC.size(); i++ ) {
-            String stringAtIndex = listOfTC.get(i).getTopic().getName();
+        ObservableList<PlanItem> listOfPlanItems = Data.getDataFromFile();
+        for ( int i = 0; i < listOfPlanItems.size(); i++ ) {
+            String stringAtIndex = listOfPlanItems.get(i).getTopic().getName();
             Cell cell = new Cell(this, stringAtIndex);
             cell.designCell(stringAtIndex);
             cell.revealCell(pane);

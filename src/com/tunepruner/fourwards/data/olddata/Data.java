@@ -1,6 +1,8 @@
 package com.tunepruner.fourwards.data.olddata;
 
 import com.tunepruner.fourwards.gui.ListArea;
+import com.tunepruner.fourwards.data.plan.*;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -19,55 +21,55 @@ import java.io.StringWriter;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Data {
     private boolean listHasBeenCreated = false;
-    @XmlElement(name = "time_container", type = TimeContainer.class)
-    private static ObservableList<TimeContainer> dataFromFile = FXCollections.observableArrayList();
+    @XmlElement(name = "time_container", type = PlanItem.class)
+    private static ObservableList<PlanItem> dataFromFile = FXCollections.observableArrayList();
 
 
-    public static ObservableList<TimeContainer> getDataFromFile() {
+    public static ObservableList<PlanItem> getDataFromFile() {
         return dataFromFile;
     }
-    public static Integer indexOf(TimeContainer timeContainerToEvaluate) {
-        Integer indexOfTimeContainer = null;
+    public static Integer indexOf(PlanItem planItemToEvaluate) {
+        Integer indexOfPlanItem = null;
         for ( int i = 0; i > dataFromFile.size(); i++ ) {
-            if (timeContainerToEvaluate == dataFromFile.get(i)) {
-                indexOfTimeContainer = i;
+            if (planItemToEvaluate == dataFromFile.get(i)) {
+                indexOfPlanItem = i;
                 break;
             }
         }
-        return indexOfTimeContainer;
+        return indexOfPlanItem;
     }
 
     public static Integer indexOf(String topicName) {
-        Integer indexOfTimeContainer = null;
+        Integer indexOfPlanItem = null;
         for ( int i = 0; i < dataFromFile.size(); i++ ) {
             if (dataFromFile.get(i).getTopic().getName().equals(topicName)) {
-                indexOfTimeContainer = i;
+                indexOfPlanItem = i;
                 break;
             }
         }
-        return indexOfTimeContainer;
+        return indexOfPlanItem;
     }
 
-    public static void add(TimeContainer timeContainerToAdd) {
-        dataFromFile.add(timeContainerToAdd);
+    public static void add(PlanItem planItemToAdd) {
+        dataFromFile.add(planItemToAdd);
     }
 
-    public static void add(int index, TimeContainer timeContainerToAdd) {
-        dataFromFile.add(index, timeContainerToAdd);
+    public static void add(int index, PlanItem planItemToAdd) {
+        dataFromFile.add(index, planItemToAdd);
     }
 
     public static void add(ListArea listArea, String topicNameToAdd) {
-        TimeContainer timeContainer = new TimeContainer(topicNameToAdd);
-        add(timeContainer);
+        PlanItem planItem = new PlanItem(topicNameToAdd);
+        add(planItem);
     }
 
     public static void add(int index, ListArea listArea, String topicNameToAdd) {
-        TimeContainer timeContainer = new TimeContainer(topicNameToAdd);
-        add(index, timeContainer);
+        PlanItem planItem = new PlanItem(topicNameToAdd);
+        add(index, planItem);
     }
 
-    public static void remove(TimeContainer timeContainerToRemove) {
-        dataFromFile.remove(timeContainerToRemove);
+    public static void remove(PlanItem planItemToRemove) {
+        dataFromFile.remove(planItemToRemove);
     }
 
     public static void remove(String topicNameToRemove) {
@@ -75,19 +77,19 @@ public class Data {
         dataFromFile.remove(indexOf);
     }
 
-    public static boolean contains(TimeContainer timeContainerToQuery) {
-        return dataFromFile.contains(timeContainerToQuery);
+    public static boolean contains(PlanItem planItemToQuery) {
+        return dataFromFile.contains(planItemToQuery);
     }
 
     public static boolean contains(String topicNameToQuery) {
         return dataFromFile
                 .stream()
-                .anyMatch(timeContainer -> timeContainer.getTopic().getName().equals(topicNameToQuery));
+                .anyMatch(planItem -> planItem.getTopic().getName().equals(topicNameToQuery));
     }
 
     public static void printAllContent() {
-        for ( TimeContainer timeContainer : dataFromFile ) {
-            System.out.println(timeContainer.getTopic().getName());
+        for ( PlanItem planItem : dataFromFile ) {
+            System.out.println(planItem.getTopic().getName());
         }
     }
 

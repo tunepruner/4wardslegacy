@@ -1,7 +1,7 @@
 package com.tunepruner.fourwards.gui;
 
 import com.tunepruner.fourwards.data.olddata.Data;
-import com.tunepruner.fourwards.data.olddata.TimeContainer;
+import com.tunepruner.fourwards.data.plan.*;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
@@ -252,7 +252,7 @@ public class Cell {
         // While making them mutually exclusive would be easier,
         // the product will feel much more complete if they
         // can both happen at once.
-        Data.getDataFromFile().addListener((ListChangeListener.Change<? extends TimeContainer> c) -> {
+        Data.getDataFromFile().addListener((ListChangeListener.Change<? extends PlanItem> c) -> {
             while (c.next()) {
 
                 if (c.wasAdded()) {
