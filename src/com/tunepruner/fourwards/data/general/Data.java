@@ -1,7 +1,6 @@
-package com.tunepruner.fourwards.data;
+package com.tunepruner.fourwards.data.general;
 
 
-import com.tunepruner.fourwards.data.daylist.DayListItem;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -14,7 +13,7 @@ import java.util.ArrayList;
 
 public class Data {
     private Timestamp timestamp;
-    private ArrayList<DayListItem> days;
+    private ArrayList<DisplayableInDayList> days;
 
     public static void persist() {
         try {

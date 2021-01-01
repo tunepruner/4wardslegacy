@@ -1,6 +1,6 @@
 package com.tunepruner.fourwards.data.olddata;
 
-import com.tunepruner.fourwards.data.Topic;
+import com.tunepruner.fourwards.data.general.Topic;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 

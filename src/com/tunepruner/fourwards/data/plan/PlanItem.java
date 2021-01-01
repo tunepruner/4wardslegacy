@@ -1,6 +1,6 @@
 package com.tunepruner.fourwards.data.plan;
 
-import com.tunepruner.fourwards.data.Topic;
+import com.tunepruner.fourwards.data.general.Topic;
 
 public class PlanItem {
     private Topic topic;/*Set only in constructor*/

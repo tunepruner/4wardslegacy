@@ -5,29 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac3e2c89-37d1-41a7-bac6-b3f85d8f1abf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/WorkTopic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/daylist/Day.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/daylist/DayListItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/daylist/PushEnd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/daylist/PushStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/log/ClockTimeEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/log/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/log/TimeAllottment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/plan/AdjustedPlan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/plan/AdjustedPlanItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/plan/Plan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/newdata/plan/PlanItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/Day.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/Day.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/Days.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/Days.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/TimeContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/TimeContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/Topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/Topic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/Topics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/Topics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Grid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/ListArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/ListArea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/general/Day.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/general/DisplayableInDayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/general/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/Topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/general/Topic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/daylist/Day.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/daylist/DayListItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/daylist/PushEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/daylist/PushEnd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/daylist/PushStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/daylist/PushStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/log/TimeAllottment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/log/TimeAllottment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/Day.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/Days.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/Days.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/TimeContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/TimeContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/Topics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/Topics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/plan/PlanItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/plan/PlanItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +89,7 @@
       <module name="4wards" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tunepruner.fourwards.data.*" />
+          <option name="PATTERN" value="com.tunepruner.fourwards.data.general.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,7 +102,7 @@
       <module name="4wards" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tunepruner.fourwards.data.*" />
+          <option name="PATTERN" value="com.tunepruner.fourwards.data.general.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,7 +115,7 @@
       <module name="4wards" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tunepruner.fourwards.data.*" />
+          <option name="PATTERN" value="com.tunepruner.fourwards.data.general.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,7 +135,7 @@
       <module name="4wards" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tunepruner.fourwards.data.*" />
+          <option name="PATTERN" value="com.tunepruner.fourwards.data.general.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,7 +148,7 @@
       <module name="4wards" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tunepruner.fourwards.data.*" />
+          <option name="PATTERN" value="com.tunepruner.fourwards.data.general.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

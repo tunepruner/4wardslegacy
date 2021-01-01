@@ -4,6 +4,6 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 public class Days {
-    private static ObservableList<Day> days = FXCollections.observableArrayList();
+//    private static ObservableList<Day> days = FXCollections.observableArrayList();
 
 }

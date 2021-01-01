@@ -1,4 +1,4 @@
-package com.tunepruner.fourwards.data;
+package com.tunepruner.fourwards.data.general;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

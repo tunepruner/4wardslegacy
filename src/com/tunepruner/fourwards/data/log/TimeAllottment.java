@@ -1,6 +1,6 @@
 package com.tunepruner.fourwards.data.log;
 
-import com.tunepruner.fourwards.data.Topic;
+import com.tunepruner.fourwards.data.general.Topic;
 
 import java.time.Duration;
 
