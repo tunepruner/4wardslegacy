@@ -89,7 +89,7 @@
       <module name="4wards" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tunepruner.fourwards.data.general.*" />
+          <option name="PATTERN" value="com.tunepruner.fourwards.data.daylist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,7 +102,7 @@
       <module name="4wards" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tunepruner.fourwards.data.general.*" />
+          <option name="PATTERN" value="com.tunepruner.fourwards.data.daylist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,7 +115,7 @@
       <module name="4wards" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tunepruner.fourwards.data.general.*" />
+          <option name="PATTERN" value="com.tunepruner.fourwards.data.daylist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,7 +135,7 @@
       <module name="4wards" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tunepruner.fourwards.data.general.*" />
+          <option name="PATTERN" value="com.tunepruner.fourwards.data.daylist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,7 +148,7 @@
       <module name="4wards" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tunepruner.fourwards.data.general.*" />
+          <option name="PATTERN" value="com.tunepruner.fourwards.data.daylist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

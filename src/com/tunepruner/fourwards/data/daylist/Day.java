@@ -1,5 +1,6 @@
-package com.tunepruner.fourwards.data.general;
+package com.tunepruner.fourwards.data.daylist;
 
+import com.tunepruner.fourwards.data.general.DisplayableInDayList;
 import com.tunepruner.fourwards.data.log.*;
 import com.tunepruner.fourwards.data.plan.*;
 

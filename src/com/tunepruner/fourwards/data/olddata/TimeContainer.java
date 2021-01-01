@@ -1,7 +1,7 @@
 package com.tunepruner.fourwards.data.olddata;
 
 import com.tunepruner.fourwards.data.general.Topic;
-import com.tunepruner.fourwards.data.general.Day;
+import com.tunepruner.fourwards.data.daylist.*;
 
 import javax.xml.bind.annotation.*;
 

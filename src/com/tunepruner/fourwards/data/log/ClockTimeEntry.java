@@ -1,7 +1,5 @@
 package com.tunepruner.fourwards.data.log;
 
-import com.tunepruner.fourwards.data.log.TimeAllottment;
-
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
