@@ -159,7 +159,8 @@ public class Cell {
     }
 
     public Point determineCellPosition() {
-        return listArea.getGrid().getGridMap().get(Data.indexOf(string));
+//        return listArea.getGrid().getGridMap().get(Data.indexOf(string));
+        return listArea.getGrid().getGridMap().get(listArea.getDay().getPlan().indexOf(string));
     }
 
     public void revealCell(Pane pane) {

@@ -28,7 +28,7 @@ public class Grid {
         double yGridFactor = -(listArea.getCellHeight() + listArea.getCellPadding());
 
         /*Distribute points on that line.*/
-        for ( int i = 0; i < Data.getDataFromFile().size(); i++) {
+        for ( int i = 0; i < listArea.getDay().getPlan().getPlanItems().size(); i++) {
             Point startingPoint = new Point(
                     listArea.getTopLeft().x - listArea.getCellWidth()*2 - listArea.getCellHeight(),
                     listArea.getTopLeft().y + listArea.getAreaHeight());

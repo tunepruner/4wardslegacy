@@ -1,7 +1,9 @@
 package com.tunepruner.fourwards.gui;
 
+import com.tunepruner.fourwards.data.daylist.Day;
 import com.tunepruner.fourwards.data.general.Data;
 import com.tunepruner.fourwards.data.plan.PlanItem;
+import com.tunepruner.fourwards.data.test.DataGenerator;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.scene.effect.DropShadow;
@@ -34,6 +36,7 @@ public class ListArea{
     private int areaHeight, areaWidth, cellHeight, cellWidth, cellPadding;
     private AdderCell adderCell;
     private Stage stage;
+    private Day day;
 
     public ListArea (
             String uniqueID,
@@ -60,6 +63,8 @@ public class ListArea{
         this.startAreaPane = new Pane();
         this.clipPane = new Pane();
         this.adderCell = AdderCell.getInstance(this);
+        this.day = DataGenerator.generate();
+        this.grid = new Grid(this);
 //        Data.readFromFile();
 //        Data.persist();
     }
@@ -157,12 +162,24 @@ public class ListArea{
 
     public void displayAllCells() {
         setGrid(new Grid(this));
-        ObservableList<PlanItem> listOfPlanItems = Data.getDataFromFile();
-        for ( int i = 0; i < listOfPlanItems.size(); i++ ) {
-            String stringAtIndex = listOfPlanItems.get(i).getTopic().getName();
+        for ( int i = 0; i < day.getPlan().getPlanItems().size(); i++ ) {
+            String stringAtIndex = day.getPlan().getPlanItems().get(i).getTopic().getName();
             Cell cell = new Cell(this, stringAtIndex);
             cell.designCell(stringAtIndex);
             cell.revealCell(pane);
         }
+//    public void displayAllCells() {
+//        setGrid(new Grid(this));
+//        ObservableList<PlanItem> listOfPlanItems = Data.getDataFromFile();
+//        for ( int i = 0; i < listOfPlanItems.size(); i++ ) {
+//            String stringAtIndex = listOfPlanItems.get(i).getTopic().getName();
+//            Cell cell = new Cell(this, stringAtIndex);
+//            cell.designCell(stringAtIndex);
+//            cell.revealCell(pane);
+//        }
+    }
+
+    public Day getDay() {
+        return day;
     }
 }

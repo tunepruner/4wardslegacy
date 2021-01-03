@@ -10,12 +10,25 @@ import java.time.LocalDate;
 public class Day implements DisplayableInDayList {
     private Timestamp timestamp;
     private LocalDate date;/*Needn't be effectively final, but must be unique! Used as key*/
+
+    public Plan getPlan() {
+        return plan;
+    }
+
     private Plan plan;/*Instantiated only in constructor.*/
     private AdjustedPlan adjustedPlan;/*Instantiated only in constructor.*/
     private Log log;/*Instantiated only in constructor.*/
 
     public Day(){}
-    public Day(LocalDate dateToday){}
+    public Day(LocalDate dateToday){
+        this.date = dateToday;
+    }
+    public Day(Plan plan, AdjustedPlan adjustedPlan, Log log, LocalDate date){
+        this.plan = plan;
+        this.adjustedPlan = adjustedPlan;
+        this.log = log;
+        this.date = date;
+    }
 
     public boolean isDay() {
         return true;
