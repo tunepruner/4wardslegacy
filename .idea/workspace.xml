@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac3e2c89-37d1-41a7-bac6-b3f85d8f1abf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_junit_jupiter_junit_jupiter_api_5_4_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_mockito_mockito_core_2_0_110_beta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/general/Data.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/olddata/Data.java" beforeDir="false" />
-    </list>
+    <list default="true" id="ac3e2c89-37d1-41a7-bac6-b3f85d8f1abf" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

@@ -1,6 +1,7 @@
 package com.tunepruner.fourwards;
 
 import com.sun.javafx.binding.StringFormatter;
+import com.tunepruner.fourwards.data.daylist.Day;
 import com.tunepruner.fourwards.gui.ListArea;
 import javafx.application.Application;
 import javafx.scene.Group;
@@ -20,6 +21,10 @@ public class Main extends Application {
         Pane listAreaPane = new Pane();
         listAreaPane.toFront();
 
+        //Data.readFromFile();
+        //Data.persist();
+        //Day day = Data.getDay(LocalData.now())
+        //TODO remember to uncomment these!!
 
         ListArea listArea = new ListArea(
                 "PlanList",
@@ -30,7 +35,10 @@ public class Main extends Application {
                 25,
                 200,
                 10,
-                primaryStage
+                primaryStage,
+                new Day()/*TODO replace this with day above*/
+//                ,
+//                day
         );
         rectBackground = new Rectangle();
         rectBackground.setFill(listArea.COLOR_OF_INNER_PANE);

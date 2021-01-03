@@ -1,5 +1,6 @@
 package com.tunepruner.fourwards.gui;
 
+import com.tunepruner.fourwards.data.daylist.Day;
 import com.tunepruner.fourwards.data.general.Data;
 import com.tunepruner.fourwards.data.plan.PlanItem;
 import javafx.collections.ObservableList;
@@ -16,7 +17,7 @@ import javafx.stage.Stage;
 import javax.xml.bind.JAXBException;
 import java.awt.*;
 
-public class ListArea{
+public class ListArea {
     public final int LIST_BOTTOM_X_VALUE = -145;
     public final int LIST_TOP_X_VALUE = 386;
     public final Color COLOR_OF_INNER_PANE = new Color(0, .2, .3, 1);
@@ -34,8 +35,9 @@ public class ListArea{
     private int areaHeight, areaWidth, cellHeight, cellWidth, cellPadding;
     private AdderCell adderCell;
     private Stage stage;
+    private Day day;
 
-    public ListArea (
+    public ListArea(
             String uniqueID,
             Pane listAreaPane,
             Point topLeft,
@@ -44,7 +46,8 @@ public class ListArea{
             int cellHeight,
             int cellWidth,
             int cellPadding,
-            Stage stage
+            Stage stage,
+            Day day
 
     ) throws JAXBException {
         this.uniqueID = uniqueID;
@@ -60,49 +63,62 @@ public class ListArea{
         this.startAreaPane = new Pane();
         this.clipPane = new Pane();
         this.adderCell = AdderCell.getInstance(this);
-//        Data.readFromFile();
-//        Data.persist();
+        this.day = day;
+
     }
 
     public void setGrid(Grid grid) {
         this.grid = grid;
     }
+
     public String getUniqueID() {
         return uniqueID;
     }
+
     public Pane getPane() {
         return pane;
     }
+
     public Grid getGrid() {
         return grid;
     }
+
     public Pane getClipPane() {
         return clipPane;
     }
+
     public Pane getStartAreaPane() {
         return startAreaPane;
     }
+
     public int getAreaHeight() {
         return areaHeight;
     }
+
     public int getAreaWidth() {
         return areaWidth;
     }
+
     public Point getTopLeft() {
         return topLeft;
     }
+
     public Pane getListAreaPane() {
         return listAreaPane;
     }
+
     public int getCellHeight() {
         return cellHeight;
     }
+
     public int getCellPadding() {
         return cellPadding;
     }
+
     public int getCellWidth() {
         return cellWidth;
     }
+
     public Stage getStage() {
         return stage;
     }
@@ -135,14 +151,14 @@ public class ListArea{
         return listAreaPane;
     }
 
-    public void handleScrolling(){
+    public void handleScrolling() {
         pane.setOnScroll(event -> {
             if (this.pane.getLayoutX() > LIST_TOP_X_VALUE) {
-                this.pane.setLayoutX(LIST_TOP_X_VALUE-1);
-                this.pane.setLayoutY(-LIST_TOP_X_VALUE+1);
-            } else if(this.pane.getLayoutX() < LIST_BOTTOM_X_VALUE) {
+                this.pane.setLayoutX(LIST_TOP_X_VALUE - 1);
+                this.pane.setLayoutY(-LIST_TOP_X_VALUE + 1);
+            } else if (this.pane.getLayoutX() < LIST_BOTTOM_X_VALUE) {
                 this.pane.setLayoutX(LIST_BOTTOM_X_VALUE + 1);
-                this.pane.setLayoutY(-LIST_BOTTOM_X_VALUE-1);
+                this.pane.setLayoutY(-LIST_BOTTOM_X_VALUE - 1);
             } else {
                 double deltaX = event.getDeltaX();
                 double deltaY = event.getDeltaY();

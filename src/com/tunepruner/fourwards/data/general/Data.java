@@ -1,5 +1,6 @@
 package com.tunepruner.fourwards.data.general;
 
+import com.tunepruner.fourwards.data.daylist.Day;
 import com.tunepruner.fourwards.data.daylist.DisplayableInDayList;
 import com.tunepruner.fourwards.gui.ListArea;
 import com.tunepruner.fourwards.data.plan.*;
@@ -25,7 +26,8 @@ import java.util.ArrayList;
 public class Data {
     private boolean listHasBeenCreated = false;
     @XmlElement(name = "time_container", type = PlanItem.class)
-    private static ObservableList<PlanItem> dataFromFile = FXCollections.observableArrayList();
+//    private static ObservableList<PlanItem> dataFromFile = FXCollections.observableArrayList();
+    private static ObservableList<Day> days = FXCollections.observableArrayList();
     private Timestamp timestamp;
     private ArrayList<DisplayableInDayList> days;
 
