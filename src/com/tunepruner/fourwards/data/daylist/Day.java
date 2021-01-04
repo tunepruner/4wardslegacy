@@ -1,13 +1,12 @@
 package com.tunepruner.fourwards.data.daylist;
 
-import com.tunepruner.fourwards.data.general.DisplayableInDayList;
 import com.tunepruner.fourwards.data.log.*;
 import com.tunepruner.fourwards.data.plan.*;
 
 import java.sql.Timestamp;
 import java.time.LocalDate;
 
-public class Day implements DisplayableInDayList {
+public class Day {
     private Timestamp timestamp;
     private LocalDate date;/*Needn't be effectively final, but must be unique! Used as key*/
 

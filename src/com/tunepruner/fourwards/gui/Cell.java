@@ -158,8 +158,8 @@ public class Cell implements Subscriber {
         cellGroup.setEffect(listArea.dropShadow);
 
         handleDragAndDrop();
-
-        cueReposition();
+//
+//        cueReposition();
     }
 
     public Point determineCellPosition() {
@@ -232,6 +232,7 @@ public class Cell implements Subscriber {
                 listArea.getPlan().add(updatedInsertionInt, listArea, "");
             }
             cellGroup.toFront();
+            executeReposition();
         });
 
         cellGroup.setOnMouseReleased(event -> {
@@ -259,7 +260,7 @@ public class Cell implements Subscriber {
         boolean animationPermitted = listArea.getGrid().animationPermitted(listArea,/*maybe add point here*/ this);
 
         if (animationPermitted) {
-            executeReposition(listArea);
+            executeReposition();
         }
 //        listArea.getPlan().addListenerOnly().addListener((ListChangeListener.Change<? extends PlanItem> c) -> {
 //            while (c.next()) {
@@ -275,8 +276,8 @@ public class Cell implements Subscriber {
 //        });
     }
 
-    public void executeReposition(ListArea listArea) {
-        final Duration SEC_2 = Duration.millis(200);
+    public void executeReposition() {
+       final Duration SEC_2 = Duration.millis(200);
         Timeline timeline = new Timeline();
         int targetIndex;
 

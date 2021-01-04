@@ -46,12 +46,14 @@ public class Plan implements ListAreaList<PlanItem> {
 
     @Override
     public void add(int index, ListArea listArea, String topicNameToAdd) {
+        notifySubscribers();
         PlanItem planItem = new PlanItem(topicNameToAdd);
         add(index, planItem);
     }
 
     @Override
     public void add(int index, PlanItem planItemToAdd) {
+        notifySubscribers();
         planItems.add(index, planItemToAdd);
     }
 
