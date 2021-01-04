@@ -1,5 +1,6 @@
 package com.tunepruner.fourwards.data.plan;
 
+import com.tunepruner.fourwards.data.general.ListAreaItem;
 import com.tunepruner.fourwards.data.general.Topic;
 import com.tunepruner.fourwards.data.daylist.*;
 
@@ -8,7 +9,7 @@ import javax.xml.bind.annotation.*;
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 //@XmlType(propOrder={"topicName"})
-public class PlanItem {
+public class PlanItem implements ListAreaItem {
     @XmlElement(name = "topic", type = Topic.class)
     private Topic topic;/*must get from list of Topics, instantiate only in constructure!*/
     private Day day;/*must get from list of Days*/

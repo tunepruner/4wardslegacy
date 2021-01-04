@@ -1,9 +1,7 @@
 package com.tunepruner.fourwards.gui;
 
 import com.tunepruner.fourwards.data.daylist.Day;
-import com.tunepruner.fourwards.data.general.Data;
-import com.tunepruner.fourwards.data.plan.PlanItem;
-import javafx.collections.ObservableList;
+import com.tunepruner.fourwards.data.general.ListAreaList;
 import javafx.geometry.Insets;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.layout.Background;
@@ -35,7 +33,9 @@ public class ListArea {
     private int areaHeight, areaWidth, cellHeight, cellWidth, cellPadding;
     private AdderCell adderCell;
     private Stage stage;
-    private Day day;
+
+
+    private ListAreaList plan;
 
     public ListArea(
             String uniqueID,
@@ -47,7 +47,7 @@ public class ListArea {
             int cellWidth,
             int cellPadding,
             Stage stage,
-            Day day
+            ListAreaList plan
 
     ) throws JAXBException {
         this.uniqueID = uniqueID;
@@ -62,9 +62,12 @@ public class ListArea {
         this.pane = new Pane();
         this.startAreaPane = new Pane();
         this.clipPane = new Pane();
+        this.plan = plan;
         this.adderCell = AdderCell.getInstance(this);
-        this.day = day;
 
+    }
+    public ListAreaList getPlan() {
+        return plan;
     }
 
     public void setGrid(Grid grid) {
@@ -173,12 +176,20 @@ public class ListArea {
 
     public void displayAllCells() {
         setGrid(new Grid(this));
-        ObservableList<PlanItem> listOfPlanItems = Data.getDataFromFile();
-        for ( int i = 0; i < listOfPlanItems.size(); i++ ) {
-            String stringAtIndex = listOfPlanItems.get(i).getTopic().getName();
+        for ( int i = 0; i < plan.size(); i++ ) {
+            String stringAtIndex = plan.get(i).getTopic().getName();
             Cell cell = new Cell(this, stringAtIndex);
             cell.designCell(stringAtIndex);
             cell.revealCell(pane);
         }
     }
+//        setGrid(new Grid(this));
+//        ObservableList<PlanItem> listOfPlanItems = Data.getDataFromFile();
+//        for ( int i = 0; i < listOfPlanItems.size(); i++ ) {
+//            String stringAtIndex = listOfPlanItems.get(i).getTopic().getName();
+//            Cell cell = new Cell(this, stringAtIndex);
+//            cell.designCell(stringAtIndex);
+//            cell.revealCell(pane);
+//        }
+//    }
 }

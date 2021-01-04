@@ -3,7 +3,6 @@ package com.tunepruner.fourwards.gui;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
-import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.util.Duration;
 
@@ -44,7 +43,7 @@ public class AdderCell extends Cell {
     }
 
     @Override
-    public void cueReposition(ListArea listArea) {
+    public void cueReposition() {
         //do nothing
     }
 

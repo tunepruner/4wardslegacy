@@ -1,6 +1,7 @@
 package com.tunepruner.fourwards.gui;
 
 import com.tunepruner.fourwards.data.general.Data;
+import com.tunepruner.fourwards.data.general.Subscriber;
 import com.tunepruner.fourwards.data.plan.*;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
@@ -17,11 +18,13 @@ import javafx.stage.Popup;
 import javafx.util.Duration;
 import javafx.scene.control.Button;
 import javafx.scene.shape.Polygon;
+
 import java.awt.*;
+
 import javafx.scene.control.ProgressBar;
 
 
-public class Cell {
+public class Cell implements Subscriber {
     HBox hBox;
     VBox vBox;
     Polygon leftTriangle;
@@ -43,6 +46,7 @@ public class Cell {
         this.label = new Label(string);
         this.string = string;
         this.listArea = listArea;
+        this.listArea.getPlan().addSubscriber(this);
     }
 
     public void designCell(String string) {
@@ -155,11 +159,11 @@ public class Cell {
 
         handleDragAndDrop();
 
-        cueReposition(listArea);
+        cueReposition();
     }
 
     public Point determineCellPosition() {
-        return listArea.getGrid().getGridMap().get(Data.indexOf(string));
+        return listArea.getGrid().getGridMap().get(listArea.getPlan().indexOf(string));
     }
 
     public void revealCell(Pane pane) {
@@ -178,7 +182,7 @@ public class Cell {
 
         });
         cellGroup.setOnMousePressed(event -> {
-            listArea.getGrid().currentDraggedFromIndex = Data.indexOf(string);
+            listArea.getGrid().currentDraggedFromIndex = listArea.getPlan().indexOf(string);
 
             preCalcSceneX = event.getSceneX();
             preCalcSceneY = event.getSceneY();
@@ -213,19 +217,19 @@ public class Cell {
             int localCurrentDraggedFromInt = listArea.getGrid().currentDraggedFromIndex;
             int updatedInsertionInt = listArea.getGrid().currentDraggedFromIndex;
 
-            if (Data.contains(string)) {
-                Data.remove(string);
+            if (listArea.getPlan().contains(string)) {
+                listArea.getPlan().remove(string);
 
-                Data.add(localCurrentDraggedFromInt, listArea, "");
+                listArea.getPlan().add(localCurrentDraggedFromInt, listArea, "");
             }
 
-            if (Data.contains("")) {
+            if (listArea.getPlan().contains("")) {
                 updatedInsertionInt = listArea.getGrid().getIndexOfXY(listArea, currentPosition);
-                Data.remove("");
+                listArea.getPlan().remove("");
             }
 
-            if (!Data.contains("")) {
-                Data.add(updatedInsertionInt, listArea, "");
+            if (!listArea.getPlan().contains("")) {
+                listArea.getPlan().add(updatedInsertionInt, listArea, "");
             }
             cellGroup.toFront();
         });
@@ -233,18 +237,18 @@ public class Cell {
         cellGroup.setOnMouseReleased(event -> {
             int indexToInsert = 0;
 
-            if (Data.contains("")) {
-                if (!Data.contains(string)) {
-                    indexToInsert = Data.indexOf("");
-                    Data.remove("");
-                    Data.add(indexToInsert, listArea, string);
+            if (listArea.getPlan().contains("")) {
+                if (!listArea.getPlan().contains(string)) {
+                    indexToInsert = listArea.getPlan().indexOf("");
+                    listArea.getPlan().remove("");
+                    listArea.getPlan().add(indexToInsert, listArea, string);
                 }
                 isInListArea = false;
             }
         });
     }
 
-    public void cueReposition(ListArea listArea) {
+    public void cueReposition() {
         /*(Everything enclosed in listener to the ObservableList)
          * Animate a timeline transform for HBox, then for VBox.
          */
@@ -252,18 +256,23 @@ public class Cell {
         // While making them mutually exclusive would be easier,
         // the product will feel much more complete if they
         // can both happen at once.
-        Data.getDataFromFile().addListener((ListChangeListener.Change<? extends PlanItem> c) -> {
-            while (c.next()) {
+        boolean animationPermitted = listArea.getGrid().animationPermitted(listArea,/*maybe add point here*/ this);
 
-                if (c.wasAdded()) {
-                    boolean animationPermitted = listArea.getGrid().animationPermitted(listArea,/*maybe add point here*/ this);
-
-                    if (animationPermitted == true) {
-                        executeReposition(listArea);
-                    }
-                }
-            }
-        });
+        if (animationPermitted) {
+            executeReposition(listArea);
+        }
+//        listArea.getPlan().addListenerOnly().addListener((ListChangeListener.Change<? extends PlanItem> c) -> {
+//            while (c.next()) {
+//
+//                if (c.wasAdded()) {
+//                    boolean animationPermitted = listArea.getGrid().animationPermitted(listArea,/*maybe add point here*/ this);
+//
+//                    if (animationPermitted) {
+//                        executeReposition(listArea);
+//                    }
+//                }
+//            }
+//        });
     }
 
     public void executeReposition(ListArea listArea) {
@@ -271,10 +280,10 @@ public class Cell {
         Timeline timeline = new Timeline();
         int targetIndex;
 
-        if (Data.contains(string)) {
-            targetIndex = Data.indexOf(string);
+        if (listArea.getPlan().contains(string)) {
+            targetIndex = listArea.getPlan().indexOf(string);
         } else {
-            targetIndex = Data.indexOf("");
+            targetIndex = listArea.getPlan().indexOf("");
         }
 
         KeyFrame end = new KeyFrame(SEC_2,
@@ -287,5 +296,9 @@ public class Cell {
         currentPosition.y = listArea.getGrid().getGridMap().get(targetIndex).y;
         timeline.setOnFinished(event -> {
         });
+    }
+
+    public void update() {
+        cueReposition();
     }
 }

@@ -28,7 +28,7 @@ public class Grid {
         double yGridFactor = -(listArea.getCellHeight() + listArea.getCellPadding());
 
         /*Distribute points on that line.*/
-        for ( int i = 0; i < Data.getDataFromFile().size(); i++) {
+        for ( int i = 0; i < listArea.getPlan().size(); i++) {
             Point startingPoint = new Point(
                     listArea.getTopLeft().x - listArea.getCellWidth()*2 - listArea.getCellHeight(),
                     listArea.getTopLeft().y + listArea.getAreaHeight());
@@ -55,7 +55,7 @@ public class Grid {
 
 
     public boolean animationPermitted(ListArea listArea, Cell cell) {
-        boolean isInList = Data.contains(cell.string);
+        boolean isInList = listArea.getPlan().contains(cell.string);
         boolean isInListArea = false;
         boolean needsAnUpdate = false;
         boolean justGotDropped = false;
@@ -69,7 +69,7 @@ public class Grid {
         }
 
         if (isInListArea && isInList) {
-            if (Data.indexOf(cell.string) != getIndexOfXY(listArea, cell.currentPosition)) {
+            if (listArea.getPlan().indexOf(cell.string) != getIndexOfXY(listArea, cell.currentPosition)) {
                 needsAnUpdate = true;
             }
         }
