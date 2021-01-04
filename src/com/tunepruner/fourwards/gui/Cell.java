@@ -25,6 +25,8 @@ import javafx.scene.control.ProgressBar;
 
 
 public class Cell implements Subscriber {
+    public static int calledMethod1 = 0;
+    public static int calledMethod2 = 0;
     HBox hBox;
     VBox vBox;
     Polygon leftTriangle;
@@ -36,6 +38,7 @@ public class Cell implements Subscriber {
     Point currentPosition = new Point();
     double preCalcSceneX, preCalcSceneY;
     ListArea listArea;
+
 
     public Cell(ListArea listArea, String string) {
         this.hBox = new HBox();
@@ -232,7 +235,6 @@ public class Cell implements Subscriber {
                 listArea.getPlan().add(updatedInsertionInt, listArea, "");
             }
             cellGroup.toFront();
-            executeReposition();
         });
 
         cellGroup.setOnMouseReleased(event -> {
@@ -246,6 +248,7 @@ public class Cell implements Subscriber {
                 }
                 isInListArea = false;
             }
+            cueReposition();
         });
     }
 
@@ -258,11 +261,12 @@ public class Cell implements Subscriber {
         // the product will feel much more complete if they
         // can both happen at once.
         boolean animationPermitted = listArea.getGrid().animationPermitted(listArea,/*maybe add point here*/ this);
-
         if (animationPermitted) {
             executeReposition();
+            System.out.println("calledMethod1 = " + calledMethod1++);
         }
-//        listArea.getPlan().addListenerOnly().addListener((ListChangeListener.Change<? extends PlanItem> c) -> {
+//        System.out.println("calledMethod2 = " + calledMethod2++);
+        //        listArea.getPlan().addListenerOnly().addListener((ListChangeListener.Change<? extends PlanItem> c) -> {
 //            while (c.next()) {
 //
 //                if (c.wasAdded()) {
