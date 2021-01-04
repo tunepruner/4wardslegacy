@@ -25,8 +25,7 @@ import javafx.scene.control.ProgressBar;
 
 
 public class Cell implements Subscriber {
-    public static int calledMethod1 = 0;
-    public static int calledMethod2 = 0;
+    //TODO set these all to private!!
     HBox hBox;
     VBox vBox;
     Polygon leftTriangle;
@@ -35,7 +34,7 @@ public class Cell implements Subscriber {
     Label label;
     String string;
     boolean isInListArea = false;
-    Point currentPosition = new Point();
+    Point currentPosition;
     double preCalcSceneX, preCalcSceneY;
     ListArea listArea;
 
@@ -50,6 +49,7 @@ public class Cell implements Subscriber {
         this.string = string;
         this.listArea = listArea;
         this.listArea.getPlan().addSubscriber(this);
+        this.currentPosition = determineCellPosition();
     }
 
     public void designCell(String string) {
@@ -154,10 +154,8 @@ public class Cell implements Subscriber {
 
         });
 
-        Point point = determineCellPosition();
-
-        cellGroup.setLayoutX(point.x);
-        cellGroup.setLayoutY(point.y);
+        cellGroup.setLayoutX(currentPosition.x);
+        cellGroup.setLayoutY(currentPosition.y);
         cellGroup.setEffect(listArea.dropShadow);
 
         handleDragAndDrop();
@@ -213,6 +211,7 @@ public class Cell implements Subscriber {
             int y = (int) (d.getLayoutY() + offsetY);
             newPoint = new Point(x, y);
             currentPosition = newPoint;
+//            System.out.println("newPoint = " + newPoint);
 
             preCalcSceneX = event.getSceneX();
             preCalcSceneY = event.getSceneY();
@@ -248,7 +247,7 @@ public class Cell implements Subscriber {
                 }
                 isInListArea = false;
             }
-            cueReposition();
+            update();
         });
     }
 
@@ -263,9 +262,7 @@ public class Cell implements Subscriber {
         boolean animationPermitted = listArea.getGrid().animationPermitted(listArea,/*maybe add point here*/ this);
         if (animationPermitted) {
             executeReposition();
-            System.out.println("calledMethod1 = " + calledMethod1++);
         }
-//        System.out.println("calledMethod2 = " + calledMethod2++);
         //        listArea.getPlan().addListenerOnly().addListener((ListChangeListener.Change<? extends PlanItem> c) -> {
 //            while (c.next()) {
 //
@@ -281,14 +278,16 @@ public class Cell implements Subscriber {
     }
 
     public void executeReposition() {
-       final Duration SEC_2 = Duration.millis(200);
+        final Duration SEC_2 = Duration.millis(200);
         Timeline timeline = new Timeline();
         int targetIndex;
 
+//        targetIndex = 21;
         if (listArea.getPlan().contains(string)) {
             targetIndex = listArea.getPlan().indexOf(string);
         } else {
             targetIndex = listArea.getPlan().indexOf("");
+            System.out.println("second");
         }
 
         KeyFrame end = new KeyFrame(SEC_2,

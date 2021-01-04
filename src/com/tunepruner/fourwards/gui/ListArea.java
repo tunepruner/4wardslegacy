@@ -63,8 +63,8 @@ public class ListArea {
         this.startAreaPane = new Pane();
         this.clipPane = new Pane();
         this.plan = plan;
+        this.grid = new Grid(this);
         this.adderCell = AdderCell.getInstance(this);
-
     }
     public ListAreaList getPlan() {
         return plan;
@@ -175,7 +175,6 @@ public class ListArea {
     }
 
     public void displayAllCells() {
-        setGrid(new Grid(this));
         for ( int i = 0; i < plan.size(); i++ ) {
             String stringAtIndex = plan.get(i).getTopic().getName();
             Cell cell = new Cell(this, stringAtIndex);

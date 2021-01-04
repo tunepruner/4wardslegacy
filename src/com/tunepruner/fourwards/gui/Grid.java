@@ -16,7 +16,8 @@ public class Grid {
         this.gridMap = gridMap;
     }
 
-    public ObservableMap<Integer, Point> getGridMap() {return gridMap;}
+    public ObservableMap<Integer, Point> getGridMap() {
+        return gridMap;}
 
     public Grid(ListArea listArea) {
         /*Calculate the angle of the left edge of the ListArea.*/
@@ -65,6 +66,7 @@ public class Grid {
             if (cell.currentPosition.equals(gridMap.get(i))) {
                 isInListArea = true;
                 cell.isInListArea = true;
+                break;
             }
         }
 
@@ -77,6 +79,7 @@ public class Grid {
         if (isInList) {
             if (!isInListArea) {
                 justGotDropped = true;
+//Here's the problem. Look at the code above that's suppose to turn "isInListArea to true".
             }
         }
 

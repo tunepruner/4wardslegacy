@@ -53,8 +53,12 @@ public class Plan implements ListAreaList<PlanItem> {
 
     @Override
     public void add(int index, PlanItem planItemToAdd) {
+//        System.out.println("Before");
+//        printAll();
         notifySubscribers();
         planItems.add(index, planItemToAdd);
+//        System.out.println("After");
+//        printAll();
     }
 
     @Override
@@ -130,5 +134,16 @@ public class Plan implements ListAreaList<PlanItem> {
     @Override
     public void addSubscriber(Subscriber subscriber) {
         subscribers.add(subscriber);
+    }
+
+    private void printAll() {
+        System.out.println("_______________");
+        for ( PlanItem planItem : planItems ) {
+            if (planItem.getTopic().getName().equals("")) System.out.print("-Empty- ;");
+            else System.out.print(planItem.getTopic().getName() + "; ");
+        }
+        System.out.println();
+        System.out.println(planItems.size());
+        System.out.println();
     }
 }
