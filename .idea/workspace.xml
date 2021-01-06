@@ -5,8 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac3e2c89-37d1-41a7-bac6-b3f85d8f1abf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_bluecatcode_mockito_mockito_1_10_19_extended_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_junit_jupiter_junit_jupiter_params_5_6_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/dragSequence.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/Cell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/CellAnimationBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/CellDesign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/CellList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/CellMouseBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/CellPlacement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/Cells.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/documentation/CellStructureFull.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/documentation/CellsDependencies.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/documentation/CellsStructureSimple.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/tunepruner/fourwards/gui/newgui/cell/CellAnimationBehaviorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4wards.iml" beforeDir="false" afterPath="$PROJECT_DIR$/4wards.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/daylist/Day.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/daylist/Day.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/daylist/PushStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/daylist/PushStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/general/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/general/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/general/Subscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/general/Subscriber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/plan/Plan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/plan/Plan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/plan/PlanItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/plan/PlanItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/AdderCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/AdderCell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Cell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Grid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/ListArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/ListArea.java" afterDir="false" />
@@ -22,9 +45,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -52,61 +75,51 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.15039062" />
     <property name="project.structure.side.proportion" value="0.3837072" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.tunepruner.fourwards.gui.newgui.cell" />
       <recent name="com.tunepruner.fourwards.data" />
     </key>
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="com.tunepruner.fourwards.data.ListFromTextFile" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/UML" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tunepruner.fourwards.gui.newgui" />
+      <recent name="com.tunepruner.fourwards.data.newdata" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.tunepruner.fourwards.data.newdata" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/UML" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Data" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tunepruner.fourwards.data.olddata.Data" />
-      <module name="4wards" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tunepruner.fourwards.data.daylist.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Data2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tunepruner.fourwards.data.Data2" />
-      <module name="4wards" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tunepruner.fourwards.data.daylist.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.CellAnimationBehaviorTest.animateIn">
     <configuration name="Days" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tunepruner.fourwards.data.olddata.Days" />
       <module name="4wards" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.tunepruner.fourwards.data.daylist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Grid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tunepruner.fourwards.gui.Grid" />
+      <module name="4wards" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tunepruner.fourwards.gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,26 +147,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XMLWriter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tunepruner.fourwards.data.XMLWriter" />
+    <configuration name="CellAnimationBehaviorTest.animateIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="4wards" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tunepruner.fourwards.data.daylist.*" />
+          <option name="PATTERN" value="com.tunepruner.fourwards.gui.newgui.cell.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.tunepruner.fourwards.gui.newgui.cell" />
+      <option name="MAIN_CLASS_NAME" value="com.tunepruner.fourwards.gui.newgui.cell.CellAnimationBehaviorTest" />
+      <option name="METHOD_NAME" value="animateIn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CellAnimationBehaviorTest.thatAnimateToChangesLocation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tunepruner.fourwards.gui.newgui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="com.tunepruner.fourwards.gui.newgui.CellAnimationBehaviorTest" />
+      <option name="METHOD_NAME" value="thatAnimateToChangesLocation" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CellAnimationBehaviorTest.animateIn" />
+        <item itemvalue="JUnit.CellAnimationBehaviorTest.thatAnimateToChangesLocation" />
+        <item itemvalue="Application.Grid" />
         <item itemvalue="Application.Days" />
         <item itemvalue="Application.ProgressBarDynamicColor" />
-        <item itemvalue="Application.Data" />
-        <item itemvalue="Application.XMLWriter" />
-        <item itemvalue="Application.Data2" />
       </list>
     </recent_temporary>
   </component>
@@ -183,10 +214,10 @@
     <state x="453" y="87" key="#com.intellij.ide.util.MemberChooser/0.23.1280.721@0.23.1280.721" timestamp="1609721672298" />
     <state x="453" y="87" key="#com.intellij.ide.util.MemberChooser/0.23.1280.723@0.23.1280.723" timestamp="1609252018785" />
     <state x="453" y="87" key="#com.intellij.ide.util.MemberChooser/0.23.1280.724@0.23.1280.724" timestamp="1609030889827" />
-    <state x="410" y="282" width="503" height="245" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1609463051098">
+    <state x="410" y="282" width="503" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1609901365712">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
-    <state x="410" y="282" width="503" height="245" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1280.721@0.23.1280.721" timestamp="1609463051098" />
+    <state x="410" y="282" width="503" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1280.721@0.23.1280.721" timestamp="1609901365712" />
     <state x="462" y="209" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1609185638730">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
@@ -206,84 +237,85 @@
       <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state x="562" y="141" key="#xdebugger.XInspectDialog/0.23.1280.724@0.23.1280.724" timestamp="1608995781565" />
-    <state width="1238" height="178" key="GridCell.Tab.0.bottom" timestamp="1609796669627">
-      <screen x="0" y="23" width="1280" height="716" />
+    <state width="1238" height="198" key="GridCell.Tab.0.bottom" timestamp="1609902459756">
+      <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state width="1238" height="181" key="GridCell.Tab.0.bottom/0.23.1280.713@0.23.1280.713" timestamp="1608780772414" />
     <state width="1238" height="181" key="GridCell.Tab.0.bottom/0.23.1280.715@0.23.1280.715" timestamp="1608742823186" />
-    <state width="1238" height="178" key="GridCell.Tab.0.bottom/0.23.1280.716@0.23.1280.716" timestamp="1609796669627" />
-    <state width="1238" height="178" key="GridCell.Tab.0.bottom/0.23.1280.721@0.23.1280.721" timestamp="1609796499518" />
+    <state width="1238" height="198" key="GridCell.Tab.0.bottom/0.23.1280.716@0.23.1280.716" timestamp="1609882732645" />
+    <state width="1238" height="198" key="GridCell.Tab.0.bottom/0.23.1280.721@0.23.1280.721" timestamp="1609902459756" />
     <state width="1238" height="221" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1609464778255" />
     <state width="1238" height="198" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1609031415597" />
-    <state width="1238" height="178" key="GridCell.Tab.0.center" timestamp="1609796669625">
-      <screen x="0" y="23" width="1280" height="716" />
+    <state width="1238" height="198" key="GridCell.Tab.0.center" timestamp="1609902459755">
+      <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state width="1238" height="181" key="GridCell.Tab.0.center/0.23.1280.713@0.23.1280.713" timestamp="1608780772412" />
     <state width="1238" height="181" key="GridCell.Tab.0.center/0.23.1280.715@0.23.1280.715" timestamp="1608742823184" />
-    <state width="1238" height="178" key="GridCell.Tab.0.center/0.23.1280.716@0.23.1280.716" timestamp="1609796669625" />
-    <state width="1238" height="178" key="GridCell.Tab.0.center/0.23.1280.721@0.23.1280.721" timestamp="1609796499517" />
+    <state width="1238" height="198" key="GridCell.Tab.0.center/0.23.1280.716@0.23.1280.716" timestamp="1609882732645" />
+    <state width="1238" height="198" key="GridCell.Tab.0.center/0.23.1280.721@0.23.1280.721" timestamp="1609902459755" />
     <state width="1238" height="221" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1609464778254" />
     <state width="1238" height="198" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1609031415596" />
-    <state width="1238" height="178" key="GridCell.Tab.0.left" timestamp="1609796669625">
-      <screen x="0" y="23" width="1280" height="716" />
+    <state width="1238" height="198" key="GridCell.Tab.0.left" timestamp="1609902459755">
+      <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state width="1238" height="181" key="GridCell.Tab.0.left/0.23.1280.713@0.23.1280.713" timestamp="1608780772408" />
     <state width="1238" height="181" key="GridCell.Tab.0.left/0.23.1280.715@0.23.1280.715" timestamp="1608742823183" />
-    <state width="1238" height="178" key="GridCell.Tab.0.left/0.23.1280.716@0.23.1280.716" timestamp="1609796669625" />
-    <state width="1238" height="178" key="GridCell.Tab.0.left/0.23.1280.721@0.23.1280.721" timestamp="1609796499517" />
+    <state width="1238" height="198" key="GridCell.Tab.0.left/0.23.1280.716@0.23.1280.716" timestamp="1609882732644" />
+    <state width="1238" height="198" key="GridCell.Tab.0.left/0.23.1280.721@0.23.1280.721" timestamp="1609902459755" />
     <state width="1238" height="221" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1609464778254" />
     <state width="1238" height="198" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1609031415596" />
-    <state width="1238" height="178" key="GridCell.Tab.0.right" timestamp="1609796669626">
-      <screen x="0" y="23" width="1280" height="716" />
+    <state width="1238" height="198" key="GridCell.Tab.0.right" timestamp="1609902459756">
+      <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state width="1238" height="181" key="GridCell.Tab.0.right/0.23.1280.713@0.23.1280.713" timestamp="1608780772413" />
     <state width="1238" height="181" key="GridCell.Tab.0.right/0.23.1280.715@0.23.1280.715" timestamp="1608742823184" />
-    <state width="1238" height="178" key="GridCell.Tab.0.right/0.23.1280.716@0.23.1280.716" timestamp="1609796669626" />
-    <state width="1238" height="178" key="GridCell.Tab.0.right/0.23.1280.721@0.23.1280.721" timestamp="1609796499518" />
+    <state width="1238" height="198" key="GridCell.Tab.0.right/0.23.1280.716@0.23.1280.716" timestamp="1609882732645" />
+    <state width="1238" height="198" key="GridCell.Tab.0.right/0.23.1280.721@0.23.1280.721" timestamp="1609902459756" />
     <state width="1238" height="221" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1609464778255" />
     <state width="1238" height="198" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1609031415596" />
-    <state width="1238" height="221" key="GridCell.Tab.1.bottom" timestamp="1609784124016">
+    <state width="1238" height="221" key="GridCell.Tab.1.bottom" timestamp="1609883509547">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state width="1238" height="219" key="GridCell.Tab.1.bottom/0.23.1280.715@0.23.1280.715" timestamp="1608697022417" />
     <state width="1238" height="221" key="GridCell.Tab.1.bottom/0.23.1280.716@0.23.1280.716" timestamp="1609784095539" />
-    <state width="1238" height="221" key="GridCell.Tab.1.bottom/0.23.1280.721@0.23.1280.721" timestamp="1609784124016" />
+    <state width="1238" height="221" key="GridCell.Tab.1.bottom/0.23.1280.721@0.23.1280.721" timestamp="1609883509547" />
     <state width="1238" height="221" key="GridCell.Tab.1.bottom/0.23.1280.723@0.23.1280.723" timestamp="1609464778257" />
     <state width="1238" height="221" key="GridCell.Tab.1.bottom/0.23.1280.724@0.23.1280.724" timestamp="1609005150149" />
-    <state width="1238" height="221" key="GridCell.Tab.1.center" timestamp="1609784124015">
+    <state width="1238" height="221" key="GridCell.Tab.1.center" timestamp="1609883509546">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state width="1238" height="219" key="GridCell.Tab.1.center/0.23.1280.715@0.23.1280.715" timestamp="1608697022416" />
     <state width="1238" height="221" key="GridCell.Tab.1.center/0.23.1280.716@0.23.1280.716" timestamp="1609784095538" />
-    <state width="1238" height="221" key="GridCell.Tab.1.center/0.23.1280.721@0.23.1280.721" timestamp="1609784124015" />
+    <state width="1238" height="221" key="GridCell.Tab.1.center/0.23.1280.721@0.23.1280.721" timestamp="1609883509546" />
     <state width="1238" height="221" key="GridCell.Tab.1.center/0.23.1280.723@0.23.1280.723" timestamp="1609464778256" />
     <state width="1238" height="221" key="GridCell.Tab.1.center/0.23.1280.724@0.23.1280.724" timestamp="1609005150148" />
-    <state width="1238" height="221" key="GridCell.Tab.1.left" timestamp="1609784124014">
+    <state width="1238" height="221" key="GridCell.Tab.1.left" timestamp="1609883509545">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state width="1238" height="219" key="GridCell.Tab.1.left/0.23.1280.715@0.23.1280.715" timestamp="1608697022416" />
     <state width="1238" height="221" key="GridCell.Tab.1.left/0.23.1280.716@0.23.1280.716" timestamp="1609784095538" />
-    <state width="1238" height="221" key="GridCell.Tab.1.left/0.23.1280.721@0.23.1280.721" timestamp="1609784124014" />
+    <state width="1238" height="221" key="GridCell.Tab.1.left/0.23.1280.721@0.23.1280.721" timestamp="1609883509545" />
     <state width="1238" height="221" key="GridCell.Tab.1.left/0.23.1280.723@0.23.1280.723" timestamp="1609464778255" />
     <state width="1238" height="221" key="GridCell.Tab.1.left/0.23.1280.724@0.23.1280.724" timestamp="1609005150147" />
-    <state width="1238" height="221" key="GridCell.Tab.1.right" timestamp="1609784124016">
+    <state width="1238" height="221" key="GridCell.Tab.1.right" timestamp="1609883509546">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state width="1238" height="219" key="GridCell.Tab.1.right/0.23.1280.715@0.23.1280.715" timestamp="1608697022417" />
     <state width="1238" height="221" key="GridCell.Tab.1.right/0.23.1280.716@0.23.1280.716" timestamp="1609784095538" />
-    <state width="1238" height="221" key="GridCell.Tab.1.right/0.23.1280.721@0.23.1280.721" timestamp="1609784124016" />
+    <state width="1238" height="221" key="GridCell.Tab.1.right/0.23.1280.721@0.23.1280.721" timestamp="1609883509546" />
     <state width="1238" height="221" key="GridCell.Tab.1.right/0.23.1280.723@0.23.1280.723" timestamp="1609464778256" />
     <state width="1238" height="221" key="GridCell.Tab.1.right/0.23.1280.724@0.23.1280.724" timestamp="1609005150148" />
     <state x="350" y="89" width="580" height="570" key="RefactorJ.ExtractClass" timestamp="1608828476563">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state x="350" y="89" width="580" height="570" key="RefactorJ.ExtractClass/0.23.1280.721@0.23.1280.721" timestamp="1608828476563" />
-    <state x="128" y="23" width="997" height="722" key="SettingsEditor" timestamp="1609463813422">
+    <state x="128" y="23" width="997" height="716" key="SettingsEditor" timestamp="1609902337637">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state x="128" y="23" width="997" height="713" key="SettingsEditor/0.23.1280.713@0.23.1280.713" timestamp="1608780744179" />
     <state x="128" y="23" key="SettingsEditor/0.23.1280.715@0.23.1280.715" timestamp="1608673534586" />
-    <state x="128" y="23" key="SettingsEditor/0.23.1280.721@0.23.1280.721" timestamp="1609463813422" />
+    <state x="128" y="23" width="997" height="716" key="SettingsEditor/0.23.1280.716@0.23.1280.716" timestamp="1609881863241" />
+    <state x="128" y="23" key="SettingsEditor/0.23.1280.721@0.23.1280.721" timestamp="1609902337637" />
     <state x="128" y="23" width="997" height="722" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1609206982415" />
     <state width="500" height="449" key="SwitcherDM" timestamp="1609719027066">
       <screen x="0" y="23" width="1280" height="721" />
@@ -291,17 +323,19 @@
     <state width="500" height="445" key="SwitcherDM/0.23.1280.716@0.23.1280.716" timestamp="1608695651893" />
     <state width="500" height="449" key="SwitcherDM/0.23.1280.721@0.23.1280.721" timestamp="1609719027066" />
     <state width="500" height="450" key="SwitcherDM/0.23.1280.724@0.23.1280.724" timestamp="1608921079895" />
-    <state x="339" y="280" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1609207002571">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state x="339" y="279" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1609902194035">
+      <screen x="0" y="23" width="1280" height="721" />
     </state>
+    <state x="339" y="279" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1280.721@0.23.1280.721" timestamp="1609902194035" />
     <state x="339" y="280" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1280.723@0.23.1280.723" timestamp="1609207002571" />
     <state x="440" y="302" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608921557792">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="440" y="302" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.723@0.23.1280.723" timestamp="1608921557792" />
-    <state x="389" y="56" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1609206965223">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state x="389" y="56" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1609902374645">
+      <screen x="0" y="23" width="1280" height="721" />
     </state>
+    <state x="389" y="56" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1280.721@0.23.1280.721" timestamp="1609902374645" />
     <state x="389" y="56" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1280.723@0.23.1280.723" timestamp="1609206965223" />
     <state x="199" y="115" width="907" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1609783671218">
       <screen x="0" y="23" width="1280" height="721" />
@@ -310,32 +344,32 @@
     <state x="199" y="115" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1280.721@0.23.1280.721" timestamp="1609783671218" />
     <state x="199" y="115" width="907" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1280.723@0.23.1280.723" timestamp="1609205672326" />
     <state x="398" y="106" width="882" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1280.724@0.23.1280.724" timestamp="1609005051370" />
-    <state x="378" y="133" key="extract.method.dialog" timestamp="1608835473454">
+    <state x="378" y="133" key="extract.method.dialog" timestamp="1609811056291">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
-    <state x="378" y="133" key="extract.method.dialog/0.23.1280.721@0.23.1280.721" timestamp="1608835473454" />
-    <state x="192" y="23" width="817" height="651" key="find.popup" timestamp="1609796579737">
-      <screen x="0" y="23" width="1280" height="716" />
+    <state x="378" y="133" key="extract.method.dialog/0.23.1280.721@0.23.1280.721" timestamp="1609811056291" />
+    <state x="191" y="23" width="817" height="651" key="find.popup" timestamp="1609882707383">
+      <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state x="192" y="23" width="817" height="651" key="find.popup/0.23.1280.716@0.23.1280.716" timestamp="1609796579737" />
-    <state x="191" y="23" width="817" height="651" key="find.popup/0.23.1280.721@0.23.1280.721" timestamp="1609781221428" />
+    <state x="191" y="23" width="817" height="651" key="find.popup/0.23.1280.721@0.23.1280.721" timestamp="1609882707383" />
     <state x="191" y="23" width="817" height="653" key="find.popup/0.23.1280.723@0.23.1280.723" timestamp="1609201280985" />
     <state x="191" y="23" width="817" height="654" key="find.popup/0.23.1280.724@0.23.1280.724" timestamp="1609023942871" />
-    <state x="239" y="23" key="new project wizard" timestamp="1609464166193">
-      <screen x="0" y="23" width="1280" height="721" />
+    <state x="239" y="23" key="new project wizard" timestamp="1609881346321">
+      <screen x="0" y="23" width="1280" height="716" />
     </state>
-    <state x="239" y="23" key="new project wizard/0.23.1280.716@0.23.1280.716" timestamp="1608679157093" />
+    <state x="239" y="23" key="new project wizard/0.23.1280.716@0.23.1280.716" timestamp="1609881346321" />
     <state x="239" y="23" key="new project wizard/0.23.1280.721@0.23.1280.721" timestamp="1609464166193" />
     <state x="341" y="164" key="refactoring.ChangeSignatureDialog" timestamp="1609201726961">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="341" y="164" key="refactoring.ChangeSignatureDialog/0.23.1280.723@0.23.1280.723" timestamp="1609201726961" />
     <state x="341" y="164" key="refactoring.ChangeSignatureDialog/0.23.1280.724@0.23.1280.724" timestamp="1609025348056" />
-    <state x="305" y="63" width="670" height="681" key="search.everywhere.popup" timestamp="1609724300776">
+    <state x="305" y="63" width="670" height="681" key="search.everywhere.popup" timestamp="1609901499061">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state x="305" y="63" width="670" height="676" key="search.everywhere.popup/0.23.1280.716@0.23.1280.716" timestamp="1608760699163" />
-    <state x="305" y="63" width="670" height="681" key="search.everywhere.popup/0.23.1280.721@0.23.1280.721" timestamp="1609724300776" />
+    <state x="305" y="63" width="670" height="681" key="search.everywhere.popup/0.23.1280.721@0.23.1280.721" timestamp="1609901499061" />
     <state x="305" y="63" width="670" height="333" key="search.everywhere.popup/0.23.1280.723@0.23.1280.723" timestamp="1608918310264" />
     <state x="305" y="63" width="670" height="334" key="search.everywhere.popup/0.23.1280.724@0.23.1280.724" timestamp="1609001194280" />
   </component>
@@ -344,13 +378,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Cell.java</url>
-          <line>269</line>
-          <option name="timeStamp" value="100" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Grid.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="114" />
+          <line>43</line>
+          <option name="timeStamp" value="116" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,6 +1,5 @@
 package com.tunepruner.fourwards.gui;
 
-import com.tunepruner.fourwards.data.daylist.Day;
 import com.tunepruner.fourwards.data.general.ListAreaList;
 import javafx.geometry.Insets;
 import javafx.scene.effect.DropShadow;
@@ -178,17 +177,8 @@ public class ListArea {
         for ( int i = 0; i < plan.size(); i++ ) {
             String stringAtIndex = plan.get(i).getTopic().getName();
             Cell cell = new Cell(this, stringAtIndex);
-            cell.designCell(stringAtIndex);
+            cell.designCell();
             cell.revealCell(pane);
         }
     }
-//        setGrid(new Grid(this));
-//        ObservableList<PlanItem> listOfPlanItems = Data.getDataFromFile();
-//        for ( int i = 0; i < listOfPlanItems.size(); i++ ) {
-//            String stringAtIndex = listOfPlanItems.get(i).getTopic().getName();
-//            Cell cell = new Cell(this, stringAtIndex);
-//            cell.designCell(stringAtIndex);
-//            cell.revealCell(pane);
-//        }
-//    }
 }

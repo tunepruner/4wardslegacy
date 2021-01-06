@@ -1,20 +1,16 @@
 package com.tunepruner.fourwards.gui;
 
-import com.tunepruner.fourwards.data.general.Data;
 import com.tunepruner.fourwards.data.general.Subscriber;
-import com.tunepruner.fourwards.data.plan.*;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
-import javafx.collections.ListChangeListener;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Group;
 import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
-import javafx.scene.paint.Color;
 import javafx.scene.shape.SVGPath;
-import javafx.stage.Popup;
 import javafx.util.Duration;
 import javafx.scene.control.Button;
 import javafx.scene.shape.Polygon;
@@ -52,7 +48,7 @@ public class Cell implements Subscriber {
         this.currentPosition = determineCellPosition();
     }
 
-    public void designCell(String string) {
+    public void designCell() {
         Pane paneInsideHBox1 = new Pane();
         Pane paneInsideHBox2 = new Pane();
         Pane paneInsideVBox1 = new Pane();
@@ -134,33 +130,31 @@ public class Cell implements Subscriber {
         vBox.getChildren().add(paneInsideVBox2);
         vBox.setVgrow(paneInsideVBox2, Priority.ALWAYS);
 
-        btn.setOnAction(event -> {
-            Popup popup = new Popup();
-            Label lbl1 = new Label("this");
-            lbl1.setTextFill(Color.WHITE);
-            Label lbl2 = new Label("that");
-            lbl2.setTextFill(Color.WHITE);
-            Label lbl3 = new Label("the other thing");
-            lbl3.setTextFill(Color.WHITE);
-            VBox vBox1 = new VBox();
-            vBox1.setBackground(new Background(new BackgroundFill(listArea.COLOR_OF_CELLS, CornerRadii.EMPTY, Insets.EMPTY)));
-            vBox1.setPadding(new Insets(5, 10, 5, 10));
-            vBox1.getChildren().addAll(lbl1, lbl2, lbl3);
-            popup.getContent().addAll(vBox1);
-            popup.setAnchorX(hBox.getLayoutX() + listArea.getCellWidth() / 2);
-            popup.setAnchorY(hBox.getLayoutY() + listArea.getCellHeight() / 2);
-            popup.setHeight(300);
-            popup.show(listArea.getStage());
-
-        });
+//        btn.setOnAction(event -> {
+//            Popup popup = new Popup();
+//            Label lbl1 = new Label("this");
+//            lbl1.setTextFill(Color.WHITE);
+//            Label lbl2 = new Label("that");
+//            lbl2.setTextFill(Color.WHITE);
+//            Label lbl3 = new Label("the other thing");
+//            lbl3.setTextFill(Color.WHITE);
+//            VBox vBox1 = new VBox();
+//            vBox1.setBackground(new Background(new BackgroundFill(listArea.COLOR_OF_CELLS, CornerRadii.EMPTY, Insets.EMPTY)));
+//            vBox1.setPadding(new Insets(5, 10, 5, 10));
+//            vBox1.getChildren().addAll(lbl1, lbl2, lbl3);
+//            popup.getContent().addAll(vBox1);
+//            popup.setAnchorX(hBox.getLayoutX() + listArea.getCellWidth() / 2);
+//            popup.setAnchorY(hBox.getLayoutY() + listArea.getCellHeight() / 2);
+//            popup.setHeight(300);
+//            popup.show(listArea.getStage());
+//
+//        });
 
         cellGroup.setLayoutX(currentPosition.x);
         cellGroup.setLayoutY(currentPosition.y);
         cellGroup.setEffect(listArea.dropShadow);
 
         handleDragAndDrop();
-//
-//        cueReposition();
     }
 
     public Point determineCellPosition() {
@@ -179,130 +173,132 @@ public class Cell implements Subscriber {
     }
 
     public void handleDragAndDrop() {
-        cellGroup.setOnMouseEntered(event -> {
-
-        });
         cellGroup.setOnMousePressed(event -> {
-            listArea.getGrid().currentDraggedFromIndex = listArea.getPlan().indexOf(string);
-
-            preCalcSceneX = event.getSceneX();
-            preCalcSceneY = event.getSceneY();
-            isInListArea = false;
-
+            onMousePressed(event);
         });
         cellGroup.setOnMouseExited(event -> cellGroup.toBack());
 
-        cellGroup.setOnDragDetected(event -> {
-        });
-
         cellGroup.setOnMouseDragged(event -> {
-            double offsetX = event.getSceneX() - preCalcSceneX;
-            double offsetY = event.getSceneY() - preCalcSceneY;
-
-            Group d = (Group) (event.getSource());
-
-            cellGroup.setLayoutX(cellGroup.getLayoutX() + offsetX);
-            cellGroup.setLayoutY(cellGroup.getLayoutY() + offsetY);
-
-            /*Report the current position in Point format,
-             * for use by the animation algorithm.*/
-            Point newPoint;
-            int x = (int) (d.getLayoutX() + offsetX);
-            int y = (int) (d.getLayoutY() + offsetY);
-            newPoint = new Point(x, y);
-            currentPosition = newPoint;
-//            System.out.println("newPoint = " + newPoint);
-
-            preCalcSceneX = event.getSceneX();
-            preCalcSceneY = event.getSceneY();
-
-            int localCurrentDraggedFromInt = listArea.getGrid().currentDraggedFromIndex;
-            int updatedInsertionInt = listArea.getGrid().currentDraggedFromIndex;
-
-            if (listArea.getPlan().contains(string)) {
-                listArea.getPlan().remove(string);
-
-                listArea.getPlan().add(localCurrentDraggedFromInt, listArea, "");
-            }
-
-            if (listArea.getPlan().contains("")) {
-                updatedInsertionInt = listArea.getGrid().getIndexOfXY(listArea, currentPosition);
-                listArea.getPlan().remove("");
-            }
-
-            if (!listArea.getPlan().contains("")) {
-                listArea.getPlan().add(updatedInsertionInt, listArea, "");
-            }
-            cellGroup.toFront();
+            onMouseDragged(event);
         });
 
         cellGroup.setOnMouseReleased(event -> {
-            int indexToInsert = 0;
+            onMouseReleased(event);
+        });
 
-            if (listArea.getPlan().contains("")) {
-                if (!listArea.getPlan().contains(string)) {
-                    indexToInsert = listArea.getPlan().indexOf("");
-                    listArea.getPlan().remove("");
-                    listArea.getPlan().add(indexToInsert, listArea, string);
-                }
-                isInListArea = false;
+    }
+
+    private void onMouseReleased(MouseEvent event) {
+        int indexToInsert = 0;
+
+        if (listArea.getPlan().contains("")) {
+            if (!listArea.getPlan().contains(string)) {
+                indexToInsert = listArea.getPlan().indexOf("");
+                listArea.getPlan().remove("");
+                listArea.getPlan().add(indexToInsert, listArea, string);
             }
-            update();
-        });
-    }
-
-    public void cueReposition() {
-        /*(Everything enclosed in listener to the ObservableList)
-         * Animate a timeline transform for HBox, then for VBox.
-         */
-        //TODO I need to make this compatible with scrolling somehow.
-        // While making them mutually exclusive would be easier,
-        // the product will feel much more complete if they
-        // can both happen at once.
-        boolean animationPermitted = listArea.getGrid().animationPermitted(listArea,/*maybe add point here*/ this);
-        if (animationPermitted) {
-            executeReposition();
+            isInListArea = false;
         }
-        //        listArea.getPlan().addListenerOnly().addListener((ListChangeListener.Change<? extends PlanItem> c) -> {
-//            while (c.next()) {
-//
-//                if (c.wasAdded()) {
-//                    boolean animationPermitted = listArea.getGrid().animationPermitted(listArea,/*maybe add point here*/ this);
-//
-//                    if (animationPermitted) {
-//                        executeReposition(listArea);
-//                    }
-//                }
-//            }
-//        });
+        update();
     }
 
-    public void executeReposition() {
-        final Duration SEC_2 = Duration.millis(200);
-        Timeline timeline = new Timeline();
-        int targetIndex;
+    private void onMouseDragged(MouseEvent event) {
+        double offsetX = event.getSceneX() - preCalcSceneX;
+        double offsetY = event.getSceneY() - preCalcSceneY;
 
-//        targetIndex = 21;
+        Group d = (Group) (event.getSource());
+
+        cellGroup.setLayoutX(cellGroup.getLayoutX() + offsetX);
+        cellGroup.setLayoutY(cellGroup.getLayoutY() + offsetY);
+
+        /*Report the current position in Point format,
+         * for use by the animation algorithm.*/
+        Point newPoint;
+        int x = (int) (d.getLayoutX() + offsetX);
+        int y = (int) (d.getLayoutY() + offsetY);
+        newPoint = new Point(x, y);
+        currentPosition = newPoint;
+//            System.out.println("newPoint = " + newPoint);
+
+        preCalcSceneX = event.getSceneX();
+        preCalcSceneY = event.getSceneY();
+
+        int draggedFromIdx = listArea.getGrid().currentDraggedFromIndex;
+        int updatedInsertionIndex = listArea.getGrid().currentDraggedFromIndex;
+
         if (listArea.getPlan().contains(string)) {
-            targetIndex = listArea.getPlan().indexOf(string);
-        } else {
-            targetIndex = listArea.getPlan().indexOf("");
-            System.out.println("second");
+            listArea.getPlan().remove(string);
+
+            listArea.getPlan().add(draggedFromIdx, listArea, "");
         }
 
-        KeyFrame end = new KeyFrame(SEC_2,
-                new KeyValue(cellGroup.layoutXProperty(), listArea.getGrid().getGridMap().get(targetIndex).x),
-                new KeyValue(cellGroup.layoutYProperty(), listArea.getGrid().getGridMap().get(targetIndex).y));
+        if (listArea.getPlan().contains("")) {
+            updatedInsertionIndex = listArea.getGrid().getIndexOfXY(listArea, currentPosition);
+            listArea.getPlan().remove("");
+        }
 
-        timeline.getKeyFrames().add(end);
-        timeline.play();
-        currentPosition.x = listArea.getGrid().getGridMap().get(targetIndex).x;
-        currentPosition.y = listArea.getGrid().getGridMap().get(targetIndex).y;
-        timeline.setOnFinished(event -> {
-        });
+        if (!listArea.getPlan().contains("")) {
+            listArea.getPlan().add(updatedInsertionIndex, listArea, "");
+        }
+        cellGroup.toFront();
+    }
+
+    private void onMousePressed(MouseEvent event) {
+        listArea.getGrid().currentDraggedFromIndex = listArea.getPlan().indexOf(string);
+
+        preCalcSceneX = event.getSceneX();
+        preCalcSceneY = event.getSceneY();
+        isInListArea = false;
+    }
+
+    private void printAll() {
+        System.out.println("_________");
+        System.out.println("_________");
+        System.out.println("_________");
+        System.out.println("_________");
+        System.out.println("CELL INFO");
+        System.out.println(string);
+        System.out.println("listArea.getPlan().indexOf(string) = " + listArea.getPlan().indexOf(string));
+        System.out.println("currentPosition = " + currentPosition);
+        System.out.println("listArea.getGrid().getGridMap().get(listArea.getPlan().indexOf(string)) = " + listArea.getGrid().getGridMap().get(listArea.getPlan().indexOf(string)));
+        System.out.println("listArea.getGrid().currentDraggedFromIndex = " + listArea.getGrid().currentDraggedFromIndex);
+        System.out.println("listArea.getGrid().currentDraggedFromIndex = " + listArea.getGrid().currentDraggedFromIndex);
+
+        System.out.println();
+    }
+
+
+    public void reposition() {
+        boolean animationPermitted = listArea.getGrid().animationPermitted(listArea, this);
+
+        if (animationPermitted) {
+
+            final Duration SEC_2 = Duration.millis(200);
+            Timeline timeline = new Timeline();
+
+            int targetIndex;
+
+            if (listArea.getPlan().contains(string)) {
+                printAll();
+                targetIndex = listArea.getPlan().indexOf(string);
+            } else {
+                targetIndex = listArea.getPlan().indexOf("");
+            }
+
+            KeyFrame end = new KeyFrame(SEC_2,
+                    new KeyValue(cellGroup.layoutXProperty(), listArea.getGrid().getGridMap().get(targetIndex).x),
+                    new KeyValue(cellGroup.layoutYProperty(), listArea.getGrid().getGridMap().get(targetIndex).y));
+
+            timeline.getKeyFrames().add(end);
+            timeline.play();
+            currentPosition.x = listArea.getGrid().getGridMap().get(targetIndex).x;
+            currentPosition.y = listArea.getGrid().getGridMap().get(targetIndex).y;
+            timeline.setOnFinished(event -> {
+            });
+        }
     }
 
     public void update() {
-        cueReposition();
+        reposition();
     }
 }

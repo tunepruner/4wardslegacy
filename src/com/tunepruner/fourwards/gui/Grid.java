@@ -1,10 +1,11 @@
 package com.tunepruner.fourwards.gui;
 
-import com.tunepruner.fourwards.data.general.Data;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableMap;
 
 import java.awt.*;
+
+import static org.mockito.Mockito.mock;
 
 public class Grid {
     ObservableMap<Integer, Point> gridMap = FXCollections.observableHashMap();
@@ -43,7 +44,7 @@ public class Grid {
 
     public int getIndexOfXY(ListArea listArea, Point currentPoint) {
         int resultingIndex = currentDraggedFromIndex;
-        for ( int i = 0; i < listArea.getGrid().getGridMap().size(); i++) {
+        for ( int i = 0; i < gridMap.size(); i++) {
             if (
                     Math.abs(currentPoint.y - (gridMap.get(i).y)) < listArea.getCellHeight() &&
                     Math.abs(currentPoint.x - (gridMap.get(i).x)) < listArea.getCellWidth())

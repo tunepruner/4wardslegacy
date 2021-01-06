@@ -1,16 +1,13 @@
 package com.tunepruner.fourwards.data.plan;
 
-import com.tunepruner.fourwards.data.general.ListAreaItem;
 import com.tunepruner.fourwards.data.general.ListAreaList;
 import com.tunepruner.fourwards.data.general.Subscriber;
 import com.tunepruner.fourwards.gui.ListArea;
 import javafx.collections.FXCollections;
-import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Plan implements ListAreaList<PlanItem> {
     private Timestamp timestamp;
@@ -55,7 +52,6 @@ public class Plan implements ListAreaList<PlanItem> {
     public void add(int index, PlanItem planItemToAdd) {
 //        System.out.println("Before");
 //        printAll();
-        notifySubscribers();
         planItems.add(index, planItemToAdd);
 //        System.out.println("After");
 //        printAll();

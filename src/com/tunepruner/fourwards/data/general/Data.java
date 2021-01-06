@@ -1,12 +1,8 @@
 package com.tunepruner.fourwards.data.general;
 
-import com.sun.codemodel.internal.JForEach;
-import com.sun.tools.corba.se.idl.constExpr.Times;
 import com.tunepruner.fourwards.data.daylist.Day;
-import com.tunepruner.fourwards.data.daylist.DisplayableInDayList;
-import com.tunepruner.fourwards.data.log.Log;
-import com.tunepruner.fourwards.gui.ListArea;
-import com.tunepruner.fourwards.data.plan.*;
+import com.tunepruner.fourwards.data.plan.Plan;
+import com.tunepruner.fourwards.data.plan.PlanItem;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -14,24 +10,18 @@ import javafx.collections.ObservableList;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
-import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.File;
 import java.io.StringWriter;
-import java.sql.Time;
 import java.sql.Timestamp;
 import java.time.LocalDate;
 import java.time.Period;
-import java.time.temporal.ChronoUnit;
-import java.time.temporal.TemporalAmount;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @XmlRootElement(name = "data")
 @XmlAccessorType(XmlAccessType.FIELD)

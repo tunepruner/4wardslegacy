@@ -1,7 +1,5 @@
 package com.tunepruner.fourwards.data.daylist;
 
-import com.tunepruner.fourwards.data.general.*;
-
 import java.sql.Timestamp;
 import java.time.LocalDate;
 

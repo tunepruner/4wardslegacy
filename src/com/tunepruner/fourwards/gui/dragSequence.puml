@@ -1,0 +1,7 @@
+@startuml
+GUI -> Cell:
+Cell -> Grid: set draggedFromIdx
+Cell -> Plan: handleMouseDrag()\nmodify list
+Cell -> Grid: getIndexOfXY()\ncalculate position
+Cell -> Plan: handleMouseReleased()\nmodify list
+@enduml

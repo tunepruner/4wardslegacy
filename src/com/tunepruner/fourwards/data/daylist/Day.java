@@ -1,7 +1,8 @@
 package com.tunepruner.fourwards.data.daylist;
 
-import com.tunepruner.fourwards.data.log.*;
-import com.tunepruner.fourwards.data.plan.*;
+import com.tunepruner.fourwards.data.log.Log;
+import com.tunepruner.fourwards.data.plan.AdjustedPlan;
+import com.tunepruner.fourwards.data.plan.Plan;
 
 import java.sql.Timestamp;
 import java.time.LocalDate;

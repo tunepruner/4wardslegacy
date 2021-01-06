@@ -1,6 +1,5 @@
 package com.tunepruner.fourwards;
 
-import com.sun.javafx.binding.StringFormatter;
 import com.tunepruner.fourwards.data.daylist.Day;
 import com.tunepruner.fourwards.data.general.Data;
 import com.tunepruner.fourwards.data.general.ListAreaList;
@@ -14,7 +13,6 @@ import javafx.stage.Stage;
 
 
 import java.awt.*;
-import java.time.LocalDate;
 
 public class Main extends Application {
     private Rectangle rectBackground;

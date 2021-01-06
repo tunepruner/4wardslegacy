@@ -37,14 +37,9 @@ public class AdderCell extends Cell {
 
     public static AdderCell getInstance(ListArea listArea) {
         adderCell = new AdderCell(listArea, STRING_TO_DISPLAY);
-        adderCell.designCell(STRING_TO_DISPLAY);
+        adderCell.designCell();
         adderCell.revealCell(listArea.getStartAreaPane());
         return adderCell;
-    }
-
-    @Override
-    public void cueReposition() {
-        //do nothing
     }
 
     @Override

@@ -2,7 +2,7 @@ package com.tunepruner.fourwards.data.plan;
 
 import com.tunepruner.fourwards.data.general.ListAreaItem;
 import com.tunepruner.fourwards.data.general.Topic;
-import com.tunepruner.fourwards.data.daylist.*;
+import com.tunepruner.fourwards.data.daylist.Day;
 
 import javax.xml.bind.annotation.*;
 
