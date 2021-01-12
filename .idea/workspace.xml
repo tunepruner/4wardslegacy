@@ -5,34 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac3e2c89-37d1-41a7-bac6-b3f85d8f1abf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_bluecatcode_mockito_mockito_1_10_19_extended_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_junit_jupiter_junit_jupiter_params_5_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/dragSequence.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/Cell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/CellAnimationBehavior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/CellDesign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/CellList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/CellMouseBehavior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/CellPlacement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/Cells.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/documentation/CellStructureFull.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/documentation/CellsDependencies.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/documentation/CellsStructureSimple.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/tunepruner/fourwards/gui/newgui/cell/CellAnimationBehaviorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4wards.iml" beforeDir="false" afterPath="$PROJECT_DIR$/4wards.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UML/Class Example.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UML/PlanCell.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UML/Testing PlantUML Plugin.puml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/daylist/Day.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/daylist/Day.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/daylist/PushStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/daylist/PushStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/general/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/general/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/general/Subscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/general/Subscriber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/general/ListAreaList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/general/ListAreaList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/plan/Plan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/plan/Plan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/plan/PlanItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/plan/PlanItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/AdderCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/AdderCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Grid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/ListArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/ListArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/AdderCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/archivedgui/AdderCell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/archivedgui/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/archivedgui/Grid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/ListArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/archivedgui/ListArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/dragSequence.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/PUML/gui/cells/dragSequence.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/cell/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/CellAnimationBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/cell/CellAnimationBehavior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/CellDesign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/cell/CellDesign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/CellList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/cell/CellList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/CellMouseBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/cell/CellMouseBehavior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/CellPlacement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/cell/CellPlacement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/Cells.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/cell/Cells.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/documentation/CellStructureFull.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/PUML/gui/cells/CellStructureFull.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/documentation/CellsDependencies.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/documentation/CellsStructureSimple.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/PUML/gui/cells/CellsStructureSimple.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tunepruner/fourwards/gui/newgui/cell/CellAnimationBehaviorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tunepruner/fourwards/gui/cell/CellAnimationBehaviorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,13 +75,6 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.tunepruner.fourwards.gui.newgui.cell" />
-      <recent name="com.tunepruner.fourwards.data" />
-    </key>
-    <key name="MoveMembersDialog.RECENTS_KEY">
-      <recent name="com.tunepruner.fourwards.data.ListFromTextFile" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.tunepruner.fourwards.gui.newgui" />
       <recent name="com.tunepruner.fourwards.data.newdata" />
@@ -95,12 +82,24 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.tunepruner.fourwards.gui.newgui.cell" />
+      <recent name="com.tunepruner.fourwards.data" />
+    </key>
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="com.tunepruner.fourwards.data.ListFromTextFile" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.tunepruner.fourwards.gui.archivedgui" />
+      <recent name="com.tunepruner.fourwards.gui" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Documentation/PUML/gui/cells" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/UML" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CellAnimationBehaviorTest.animateIn">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Days" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tunepruner.fourwards.data.olddata.Days" />
       <module name="4wards" />
@@ -115,11 +114,11 @@
       </method>
     </configuration>
     <configuration name="Grid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tunepruner.fourwards.gui.Grid" />
+      <option name="MAIN_CLASS_NAME" value="com.tunepruner.fourwards.gui.archivedgui.Grid" />
       <module name="4wards" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tunepruner.fourwards.gui.*" />
+          <option name="PATTERN" value="com.tunepruner.fourwards.gui.archivedgui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,12 +150,12 @@
       <module name="4wards" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tunepruner.fourwards.gui.newgui.cell.*" />
+          <option name="PATTERN" value="com.tunepruner.fourwards.gui.cell.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tunepruner.fourwards.gui.newgui.cell" />
-      <option name="MAIN_CLASS_NAME" value="com.tunepruner.fourwards.gui.newgui.cell.CellAnimationBehaviorTest" />
+      <option name="PACKAGE_NAME" value="com.tunepruner.fourwards.gui.cell" />
+      <option name="MAIN_CLASS_NAME" value="com.tunepruner.fourwards.gui.cell.CellAnimationBehaviorTest" />
       <option name="METHOD_NAME" value="animateIn" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -166,7 +165,7 @@
     <configuration name="CellAnimationBehaviorTest.thatAnimateToChangesLocation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tunepruner.fourwards.gui.newgui.*" />
+          <option name="PATTERN" value="com.tunepruner.fourwards.gui.archivedgui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -214,10 +213,19 @@
     <state x="453" y="87" key="#com.intellij.ide.util.MemberChooser/0.23.1280.721@0.23.1280.721" timestamp="1609721672298" />
     <state x="453" y="87" key="#com.intellij.ide.util.MemberChooser/0.23.1280.723@0.23.1280.723" timestamp="1609252018785" />
     <state x="453" y="87" key="#com.intellij.ide.util.MemberChooser/0.23.1280.724@0.23.1280.724" timestamp="1609030889827" />
-    <state x="410" y="282" width="503" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1609901365712">
-      <screen x="0" y="23" width="1280" height="721" />
+    <state x="212" y="253" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1610494056879">
+      <screen x="0" y="23" width="1280" height="715" />
     </state>
+    <state x="212" y="253" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1280.715@0.23.1280.715" timestamp="1610494056879" />
+    <state x="410" y="280" width="527" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1610494084875">
+      <screen x="0" y="23" width="1280" height="715" />
+    </state>
+    <state x="410" y="280" width="527" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1280.715@0.23.1280.715" timestamp="1610494084875" />
     <state x="410" y="282" width="503" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1280.721@0.23.1280.721" timestamp="1609901365712" />
+    <state x="410" y="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1610494062592">
+      <screen x="0" y="23" width="1280" height="715" />
+    </state>
+    <state x="410" y="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.1280.715@0.23.1280.715" timestamp="1610494062592" />
     <state x="462" y="209" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1609185638730">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
@@ -377,7 +385,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Cell.java</url>
+          <url>file://$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/archivedgui/Cell.java</url>
           <line>43</line>
           <option name="timeStamp" value="116" />
         </line-breakpoint>

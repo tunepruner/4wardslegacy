@@ -2,7 +2,7 @@ package com.tunepruner.fourwards.data.plan;
 
 import com.tunepruner.fourwards.data.general.ListAreaList;
 import com.tunepruner.fourwards.data.general.Subscriber;
-import com.tunepruner.fourwards.gui.ListArea;
+import com.tunepruner.fourwards.gui.archivedgui.ListArea;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 

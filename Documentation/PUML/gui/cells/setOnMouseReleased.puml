@@ -1,0 +1,5 @@
+@startuml
+-> CellMouseBehavior: setOn\nMouse\nReleased()
+CellMouseBehavior -> CellList: endDrag()
+CellList -> CellList: replace(placeholder, draggedCell)
+@enduml

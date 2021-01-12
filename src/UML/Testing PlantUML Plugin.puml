@@ -1,3 +1,0 @@
-@startuml
-This -> That: Authentication
-@enduml

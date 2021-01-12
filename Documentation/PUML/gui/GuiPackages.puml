@@ -1,0 +1,44 @@
+@startuml
+package "gui" as gui{
+
+Main -* DirectionPane
+DirectionPane --* TabPane
+TabPane --* CenterPane
+
+
+package dayseditor{
+class DaysEditorData
+class DaysEditor
+}
+package planeditor{
+interface dao.PlanEditorDao
+dao.PlanEditorDao *-up- PlanEditorData
+package area{
+
+}
+package cell{
+class PlanEditorData
+class PlanEditor
+}
+
+}
+package breakdowneditor{
+class BreakDownEditorData
+class BreakDownEditor
+}
+package clockouteditor{
+class ClockOutEditorData
+class ClockOutEditor
+}
+package statsview{
+class StatsViewData
+class StatsView
+}
+CenterPane -* StatsView
+CenterPane -* ClockOutEditor
+CenterPane --* BreakDownEditor
+CenterPane --* PlanEditor
+CenterPane ----* DaysEditor
+}
+
+@enduml

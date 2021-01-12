@@ -1,7 +1,7 @@
 package com.tunepruner.fourwards.data.general;
 
 import com.tunepruner.fourwards.data.plan.PlanItem;
-import com.tunepruner.fourwards.gui.ListArea;
+import com.tunepruner.fourwards.gui.archivedgui.ListArea;
 import javafx.collections.ObservableList;
 
 public interface ListAreaList<T extends ListAreaItem> extends Observable {

@@ -1,4 +1,4 @@
-package com.tunepruner.fourwards.gui.newgui.cell;
+package com.tunepruner.fourwards.gui.cell;
 
 public interface CellMouseBehavior {
     public void setOnMouseOver();

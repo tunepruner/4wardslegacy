@@ -17,6 +17,6 @@ Cells *-- Cell
 CellDesign <.. CellMouseBehavior: getCellBounderies()
 CellPlacement <.. CellAnimationBehavior: getPosition()
 CellMouseBehavior <.> CellPlacement: observer \nrelationship
-CellList <..... CellMouseBehavior: moveTo()
+CellList <..... CellPlacement: getIndex()\nmoveTo() on\ndrag\npossibly\nobserver\nrelationship
 CellList <..... CellPlacement: getIndex()
-@enduml
+@endumlw

@@ -1,4 +1,4 @@
-package com.tunepruner.fourwards.gui;
+package com.tunepruner.fourwards.gui.archivedgui;
 
 import com.tunepruner.fourwards.data.general.ListAreaList;
 import javafx.geometry.Insets;

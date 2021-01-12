@@ -1,0 +1,41 @@
+@startuml
+package "dao" as dao{
+interface Dao
+class DaoFactory
+interface persistence.DaysList
+class DaysListDao <<Dao>>
+persistence.DaysList *-up-- DaysListDao
+package "planeditordao" as planeditordao{
+interface PlanEditorDao
+
+}
+package "dayseditordao" as dayseditordao{
+interface DaysEditorDao
+}
+
+package "breakdowneditordao" as breakdowneditordao{
+interface BreakDownEditorDao
+}
+
+package "clockouteditordao" as clockouteditordao{
+interface ClockOutEditorDao
+}
+
+package "statsviewdao" as statsviewdao{
+interface StatsViewDao
+}
+
+DaoFactory --* persistence.DaysList
+DaysListDao ---* DaysEditorDao
+DaysListDao ---* PlanEditorDao
+DaysListDao ---* BreakDownEditorDao
+DaysListDao ---* ClockOutEditorDao
+DaysListDao ---* StatsViewDao
+
+Dao <|-- DaysEditorDao
+Dao <|-- PlanEditorDao
+Dao <|-- BreakDownEditorDao
+Dao <|-- ClockOutEditorDao
+Dao <|-- StatsViewDao
+}
+@enduml
