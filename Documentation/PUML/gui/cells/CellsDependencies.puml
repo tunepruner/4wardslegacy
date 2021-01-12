@@ -1,0 +1,21 @@
+@startuml
+package LittleReminder{
+class Cells{
+static CellList<Cell>
+}
+class Cell{
+CellMouseBehavior
+CellPlacement
+CellAnimationBehavior
+CellDesign
+}
+}
+Cells *-- Cell
+
+'Dependencies
+
+CellDesign <.. CellMouseBehavior: getCellBounderies()
+CellPlacement <.. CellAnimationBehavior: getPosition()
+CellMouseBehavior <.> CellPlacement: observer \nrelationship
+CellList <..... CellPlacement: getIndex()\nmoveTo() on\ndrag\npossibly\nobserver\nrelationship
+@endumlw

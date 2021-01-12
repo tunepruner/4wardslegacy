@@ -1,0 +1,66 @@
+@startuml
+class Main{
+main()
+}
+abstract class Application{
+From javafx.application
+}
+class DirectionPaneLoader extends Application{
+Pane directionPane
+TabPaneLoader
+start()
+}
+class TabPaneLoader{
+Pane tabPane
+CenterPane
+}
+class CenterPaneLoader{
+Pane centerPane
+PlanEditor
+DaysEditor
+BreakdownEditor
+ClockOutEditor
+StatsView
+CenterPaneLoader
+Collection<CenterPaneContent> trail
+int currentIdx
+-addStep()
++load()
+-getIdx()
++toPrevious()
+}
+
+interface CenterPaneContent{
+load()
+}
+class PlanEditor<<CenterPaneContent>>{
+Pane thisPane
+ListArea
+}
+class DaysEditor<<CenterPaneContent>>{
+Pane thisPane
+}
+class ClockOutEditor<<CenterPaneContent>>{
+Pane thisPane
+}
+class BreakdownEditor<<CenterPaneContent>>{
+Pane thisPane
+}
+class StatsView<<CenterPaneContent>>{
+Pane thisPane
+}
+class StartArea{
+Pane thisPane
+}
+
+Main -* DirectionPaneLoader
+DirectionPaneLoader -* TabPaneLoader
+TabPaneLoader --* CenterPaneLoader
+TabPaneLoader -* StartArea
+CenterPaneLoader--* PlanEditor
+CenterPaneLoader--* DaysEditor
+CenterPaneLoader--* BreakdownEditor
+CenterPaneLoader--* ClockOutEditor
+CenterPaneLoader--* StatsView
+CenterPaneLoader  -* CenterPaneContent
+@enduml

@@ -1,10 +1,7 @@
-package com.tunepruner.fourwards.gui;
+package com.tunepruner.fourwards.gui.oldgui;
 
 import com.tunepruner.fourwards.data.daylist.Day;
-import com.tunepruner.fourwards.data.general.Data;
-import com.tunepruner.fourwards.data.plan.PlanItem;
 import com.tunepruner.fourwards.data.test.DataGenerator;
-import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.layout.Background;

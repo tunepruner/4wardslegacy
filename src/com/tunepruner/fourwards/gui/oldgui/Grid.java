@@ -1,4 +1,4 @@
-package com.tunepruner.fourwards.gui;
+package com.tunepruner.fourwards.gui.oldgui;
 
 import com.tunepruner.fourwards.data.general.Data;
 import javafx.collections.FXCollections;

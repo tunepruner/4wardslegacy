@@ -22,7 +22,7 @@ import java.util.ArrayList;
 
 @XmlRootElement(name = "data")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Data {
+public class Days {
     private boolean listHasBeenCreated = false;
     @XmlElement(name = "time_container", type = PlanItem.class)
     private static ObservableList<PlanItem> dataFromFile = FXCollections.observableArrayList();
@@ -100,16 +100,16 @@ public class Data {
 
     public static void persist() {
         try {
-            Data data = new Data();
-            JAXBContext context = JAXBContext.newInstance(Data.class);
+            Days days = new Days();
+            JAXBContext context = JAXBContext.newInstance(Days.class);
             Marshaller marshaller = context.createMarshaller();
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
             StringWriter sw = new StringWriter();
-            marshaller.marshal(data, sw);
+            marshaller.marshal(days, sw);
 
             File f = new File("./data.xml");
-            marshaller.marshal(data, f);
+            marshaller.marshal(days, f);
 
             System.out.println(sw.toString());
         } catch (JAXBException e) {
@@ -119,11 +119,11 @@ public class Data {
     }
 
     public static void readFromFile() throws JAXBException {
-        JAXBContext jaxbContext = JAXBContext.newInstance(Data.class);
+        JAXBContext jaxbContext = JAXBContext.newInstance(Days.class);
         Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
 
         File f = new File("data.xml");
 
-        Data data = (Data) unmarshaller.unmarshal(f);
+        Days data = (Days) unmarshaller.unmarshal(f);
     }
 }

@@ -1,0 +1,109 @@
+@startuml
+class ListArea{
+-{static} final Point listAreaTopLeft
++{static} final int listAreaHeight
++{static} final int listAreaWidth
++{static} final Theme theme
+-{static} final CellList
++{static} getTopLeft()
++{static} getListAnchor()
++{static} getStartAreaAnchor()
++{static} populateListOfCells()
++{static} displayAllCells(Pane)
++{static} handleScrolling(Pane)
+}
+class Cell{
+-CellData
+-CellDesign
+-CellPlacement
+-CellAnimationBehavior
+-CellMouseBehavior
++prepareCell()
+}
+class CellAnimationBehavior<<Observer>>{
+-CellPlacement
+-Node container
++animateIn();
++animateOut();
++animateTo();
++update()
+}
+class CellMouseBehavior{
+-CellList
+-CellPlacement
+-Node container
++setOnMouseOver()
++setOnMouseClicked()
++setOnMousePressed()
++setOnMouseDragged()
++setOnMouseReleased()
++handle()
+}
+class CellPlacement<<Observer>>{
+-CellData
+-CellList
+-Point placement
+-List<Observer>
+-Node container
+-setPosition()
++followDrag(int x, int y)
+-updateListIndex()
++placeAtNewIndex()
++update()
+}
+class CellDesign{
+-{field} ListArea(for colors)
+-CellData data
+-int width
+-int height
+-int padding
++createDesign()
++getContainer()
+}
+class CellList<E extends Cell> <<Observable>>{
+-List<E> cells
+-CellGrid
+-List<CellPlacement>
+-List<CellAnimationBehavior>
+-Cell draggedCell
+-CellPlaceholder placeHolder
++indexOf(int ID)
++contains(int ID)
++remove(int ID)
++add(E)
++replace(E)
++moveTo(E e, int index)
++getZone(Point placement)
++addObserver()
+-onMoveTo()
+-onFinishedMoving()
+}
+
+class CellGrid{
+-Map<int, Point> grid
++getZone()
+}
+
+class CellData{
+-final int ID
+-String string
+-int time
+}
+
+class CellPlaceholder{
+@Override prepareCell()
+}
+
+ListArea -* CellList
+CellList -*CellGrid
+Cell *-- CellDesign
+Cell *-- CellAnimationBehavior
+Cell *-- CellPlacement
+Cell *-- CellMouseBehavior
+Cell *-- CellData
+Cell <|- CellPlaceholder
+CellList --o Cell
+CellMouseBehavior --* CellList
+CellPlacement --* CellList
+
+@enduml

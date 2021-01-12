@@ -1,0 +1,32 @@
+@startuml
+package "persistence" as persistence{
+interface DaysList
+interface DayListItem
+
+
+class Days <<DaysList>>
+Days .up. DaysList
+Days --* DayListItem
+DayListItem .. PushEnd
+DayListItem .. PushStart
+DayListItem .. Day
+class Day <<DayListItem>>
+class PushEnd <<DayListItem>>
+class PushStart<<DayListItem>>
+
+class Plan
+class AdjustedPlan
+class Log
+Day --* Plan
+Day --* AdjustedPlan
+Day --* Log
+class PlanItem
+Plan --* PlanItem
+class AdjustedPlanItem
+AdjustedPlan --* AdjustedPlanItem
+class TimeAllotment
+class ClockTimeEntry
+Log --* ClockTimeEntry
+ClockTimeEntry --* TimeAllotment
+}
+@enduml

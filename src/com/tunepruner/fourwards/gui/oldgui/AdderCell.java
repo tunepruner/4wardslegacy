@@ -1,9 +1,8 @@
-package com.tunepruner.fourwards.gui;
+package com.tunepruner.fourwards.gui.oldgui;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
-import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.util.Duration;
 
