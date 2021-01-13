@@ -10,6 +10,7 @@
 1. ##### Cloud backup
     1. User authentication
     1. Any measures needed for future mobile client sync
+    1. Requires MVP to have very loosely coupled layers
 
 1. ##### Pushes in day editor
 
@@ -25,3 +26,4 @@
 
 1. ##### Undo/redo support in all four Editors
 
+1. ##### Dark Theme/Light Theme

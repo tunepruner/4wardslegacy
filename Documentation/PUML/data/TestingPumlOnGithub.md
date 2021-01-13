@@ -1,0 +1,3 @@
+```puml
+class Testing
+```

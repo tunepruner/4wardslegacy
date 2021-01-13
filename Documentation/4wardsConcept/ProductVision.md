@@ -8,5 +8,3 @@
 |Unlike|<i>time trackers, to-do list apps, Pomo timers, and flat databases,</i>|
 |4wards|<i>only allows time goals and time achievements.</i>|
 
-
-

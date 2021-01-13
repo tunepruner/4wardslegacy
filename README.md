@@ -32,15 +32,20 @@ More info is available in the Documentation directory (see below for links).
 ## Progress
 
 This application is under construction. Various experiments with 
-potential features can be found at these locations:
--[4wardsPOC1a](https://github.com/tunepruner/4wards_POC1.a_MultiList)
--[4wardsPOC1b](https://github.com/tunepruner/4wards_POC1.b_editor)
--[4wardsPOC1c](https://github.com/tunepruner/4wards_POC1.c_navigation)
+different features can be found at these locations:
+- [4wardsPOC1a](https://github.com/tunepruner/4wards_POC1.a_MultiList)
+- [4wardsPOC1b](https://github.com/tunepruner/4wards_POC1.b_editor)
+- [4wardsPOC1c](https://github.com/tunepruner/4wards_POC1.c_navigation)
 
-This, being the main repo, has no implimentation yet. 
+This, being the main repo, has shell classes, packages, and some shell 
+methods, but no implementation yet. 
 It is transitioning from the design stage to the test plan stage. 
-My goal is to apply TDD techniques to maximize technical agility.
-The documentation is the current focus. 
+My goal is to apply TDD techniques to maximize technical agility. I aim to 
+begin with a full architecture 
+containing dummy components and gradually switch them out with fully working 
+ones.
+
+The Documentation directory is where most things are happening at present. 
 
 ## Dependencies
 
