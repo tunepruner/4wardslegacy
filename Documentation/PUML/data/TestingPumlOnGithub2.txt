@@ -1,5 +1,5 @@
 ```puml
 @startuml
-class Testing
+class Testing2
 @enduml
 ```
