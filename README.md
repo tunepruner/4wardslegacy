@@ -26,7 +26,8 @@ work topics. In that dialogue, other specific info is collected and then used
 to generate visualizations. The goal is to bring the user into a loop 
 of generating and relishing gratifying data generated from work-time recorded.
 
-More info is available in the Documentation directory (see below).
+For a detailed description, see - the ![MVP](Documentation/4wardsConcept/MVP.md).
+More info is available in the Documentation directory (see below for links).
 
 ## Progress
 
@@ -57,7 +58,7 @@ In the directory Documentation/4wardsConcept, you can find:
 - a ![product vision](Documentation/4wardsConcept/ProductVision.md),
 - the ![MVP requirements](Documentation/4wardsConcept/MVP.md),
 - the ![post MVP overflow](Documentation/4wardsConcept/PostMvpOverflow.md),
-- a subdirectory with ![hand drawings](/Drawings) of how the MVP 4wards should look.
+- a subdirectory with ![hand drawings](Documentation/Drawings) of how the MVP 4wards should look.
  
 
 ## License
