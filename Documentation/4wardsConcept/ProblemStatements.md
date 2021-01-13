@@ -62,13 +62,13 @@ inherently discouraged, even when they could be very helpful.
 >   - ATTRIBUTE WORK QUALITY TO MULTIPLE FACTORS, AND PROVIDE
 >A MORE FLEXIBLE WAY FOR A USER TO RECORD HIGH QUALITY PROGRESS</i> 
 
->>- <i>Problem: </i> While a clocked Pomo supposedly indicates a highly focused 
+>- <i>Problem: </i> While a clocked Pomo supposedly indicates a highly focused 
 >session, that's not necessarily the case, and a user ends up recording pomos
 >finished which don't deserve to be considered focused time blocks.
 >- <i>A solution would: 
 >   - PROMPT THE USER TO RATE LEVEL OF FOCUS AT END OF 
 >SESSION</i> 
->
+
 >- <i>Problem: </i> It is difficult to start a Pomo, due to unfavorable 
 >disposition, and this may lead to not starting at all.
 >- <i>A solution would: 
