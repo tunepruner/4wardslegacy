@@ -58,8 +58,6 @@ In the directory Documentation/4wardsConcept, you can find:
 - a ![product vision](Documentation/4wardsConcept/ProductVision.md),
 - the ![MVP requirements](Documentation/4wardsConcept/MVP.md),
 - the ![post MVP overflow](Documentation/4wardsConcept/PostMvpOverflow.md),
-- a subdirectory with ![hand drawings](Documentation/Drawings) of how the MVP 4wards should look.
- 
 
 ## License
 
