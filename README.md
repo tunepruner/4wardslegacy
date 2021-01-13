@@ -14,11 +14,11 @@
 </p>
 
 ## What is 4wards?
-### Application type
+### A desktop application
 4wards will be a cross-platform GUI application, designed to expand to 
 multi-device sync and cloud back-up.
  
-### Concept
+### Description
 It's an effort tracker designed specifically for the independent  
 learner. What sets it apart is its clock-out dialogue, 
 which allows a user to easily associate a work session with <i>multiple</i> 
@@ -26,16 +26,16 @@ work topics. In that dialogue, other specific info is collected and then used
 to generate visualizations. The goal is to bring the user into a loop 
 of generating and relishing gratifying data generated from work-time recorded.
 
-For a detailed description, see - the ![MVP](Documentation/4wardsConcept/MVP.md).
+For a detailed description, see - the [MVP](Documentation/4wardsConcept/MVP.md).
 More info is available in the Documentation directory (see below for links).
 
 ## Progress
 
 This application is under construction. Various experiments with 
 potential features can be found at these locations:
--![4wardsPOC1a](https://github.com/tunepruner/4wards_POC1.a_MultiList)
--![4wardsPOC1b](https://github.com/tunepruner/4wards_POC1.b_editor)
--![4wardsPOC1c](https://github.com/tunepruner/4wards_POC1.c_navigation)
+-[4wardsPOC1a](https://github.com/tunepruner/4wards_POC1.a_MultiList)
+-[4wardsPOC1b](https://github.com/tunepruner/4wards_POC1.b_editor)
+-[4wardsPOC1c](https://github.com/tunepruner/4wards_POC1.c_navigation)
 
 This, being the main repo, has no implimentation yet. 
 It is transitioning from the design stage to the test plan stage. 
@@ -54,11 +54,11 @@ be viewed with any other plugin...)
 ## Docs At a Glance
 
 In the directory Documentation/4wardsConcept, you can find:
-- a ![problem statement](Documentation/4wardsConcept/ProblemStatements.md),
-- a ![product vision](Documentation/4wardsConcept/ProductVision.md),
-- the ![MVP requirements](Documentation/4wardsConcept/MVP.md),
-- the ![post MVP overflow](Documentation/4wardsConcept/PostMvpOverflow.md),
+- a [problem statement](Documentation/4wardsConcept/ProblemStatements.md),
+- a [product vision](Documentation/4wardsConcept/ProductVision.md),
+- the [MVP requirements](Documentation/4wardsConcept/MVP.md),
+- the [post MVP overflow](Documentation/4wardsConcept/PostMvpOverflow.md),
 
 ## License
 
-Distributed under the MIT License. See ![`LICENSE`](LICENSE.txt) for more information.
+Distributed under the MIT License. See [`LICENSE`](LICENSE.txt) for more information.
