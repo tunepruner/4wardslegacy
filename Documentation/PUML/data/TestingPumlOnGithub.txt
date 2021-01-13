@@ -1,3 +1,3 @@
-```puml
+@startuml
 class Testing
-```
+@enduml
