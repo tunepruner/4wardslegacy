@@ -5,28 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac3e2c89-37d1-41a7-bac6-b3f85d8f1abf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/UML/Class Example.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UML/PlanCell.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UML/Testing PlantUML Plugin.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/general/ListAreaList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/general/ListAreaList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/plan/Plan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/data/plan/Plan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/AdderCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/archivedgui/AdderCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/archivedgui/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/archivedgui/Grid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/ListArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/archivedgui/ListArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/dragSequence.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/PUML/gui/cells/dragSequence.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/cell/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/CellAnimationBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/cell/CellAnimationBehavior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/CellDesign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/cell/CellDesign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/CellList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/cell/CellList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/CellMouseBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/cell/CellMouseBehavior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/CellPlacement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/cell/CellPlacement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/Cells.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/cell/Cells.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/documentation/CellStructureFull.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/PUML/gui/cells/CellStructureFull.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/documentation/CellsDependencies.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tunepruner/fourwards/gui/newgui/cell/documentation/CellsStructureSimple.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/PUML/gui/cells/CellsStructureSimple.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/tunepruner/fourwards/gui/newgui/cell/CellAnimationBehaviorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tunepruner/fourwards/gui/cell/CellAnimationBehaviorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,18 +48,16 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15039062" />
-    <property name="project.structure.side.proportion" value="0.3837072" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.tunepruner.fourwards.gui.newgui" />
-      <recent name="com.tunepruner.fourwards.data.newdata" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Documentation/PUML/gui/cells" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/UML" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.tunepruner.fourwards.gui.newgui.cell" />
@@ -89,14 +66,16 @@
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="com.tunepruner.fourwards.data.ListFromTextFile" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.tunepruner.fourwards.gui.archivedgui" />
       <recent name="com.tunepruner.fourwards.gui" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Documentation/PUML/gui/cells" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/UML" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tunepruner.fourwards.gui.newgui" />
+      <recent name="com.tunepruner.fourwards.data.newdata" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -317,12 +296,12 @@
       <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state x="350" y="89" width="580" height="570" key="RefactorJ.ExtractClass/0.23.1280.721@0.23.1280.721" timestamp="1608828476563" />
-    <state x="128" y="23" width="997" height="716" key="SettingsEditor" timestamp="1609902337637">
-      <screen x="0" y="23" width="1280" height="721" />
+    <state x="128" y="23" width="997" height="716" key="SettingsEditor" timestamp="1610495219114">
+      <screen x="0" y="23" width="1280" height="716" />
     </state>
     <state x="128" y="23" width="997" height="713" key="SettingsEditor/0.23.1280.713@0.23.1280.713" timestamp="1608780744179" />
     <state x="128" y="23" key="SettingsEditor/0.23.1280.715@0.23.1280.715" timestamp="1608673534586" />
-    <state x="128" y="23" width="997" height="716" key="SettingsEditor/0.23.1280.716@0.23.1280.716" timestamp="1609881863241" />
+    <state x="128" y="23" width="997" height="716" key="SettingsEditor/0.23.1280.716@0.23.1280.716" timestamp="1610495219114" />
     <state x="128" y="23" key="SettingsEditor/0.23.1280.721@0.23.1280.721" timestamp="1609902337637" />
     <state x="128" y="23" width="997" height="722" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1609206982415" />
     <state width="500" height="449" key="SwitcherDM" timestamp="1609719027066">
