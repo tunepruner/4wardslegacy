@@ -5,44 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac3e2c89-37d1-41a7-bac6-b3f85d8f1abf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/data/DataPackageFull.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/data/Declarations.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/DaysEditorPackageSimple.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/Declarations.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/UndoRedoDaysEditor.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/CellPackageFull.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/sequences/AddCell.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/sequences/ClickEditDay.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/sequences/CollapsePush.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/sequences/DuplicateCell.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/sequences/ExpandPush.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/sequences/JumpTo.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/sequences/NudgeCellLeft.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/sequences/NudgeCellRight.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/sequences/NudgePushLeft.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/sequences/NudgePushRight.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/sequences/PreviewDay.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/sequences/Redo.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/sequences/RemoveCell.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/sequences/Undo.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/sequences/drag/DragIntoPush.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/sequences/drag/DragOutOfList.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/sequences/drag/DragOverAnother.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/layerinteraction/DaysEditorLayers.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/layerlevel/DataNeededPerWindow.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/PUML/layerlevel/DataNeededPerWindow.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/PUML/forREADME/forREADME.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/PUML/data/DaysFull.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/PUML/data/dao_layer.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/PUML/layerlevel/dao_layer.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/PUML/data/persistence_layer.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/PUML/layerlevel/persistence_layer.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/PUML/gui/GuiPackages.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/PUML/layerlevel/gui_layer.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/PUML/gui/cells/CellPackageFull.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/PUML/gui/cells/CellStructureFull.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/PUML/gui/cells/CellsDependencies.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/CellsDependencies.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/PUML/gui/cells/CellsStructureSimple.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/PUML/gui/cells/dragSequence.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/sequences/drag/DragSequence.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/PUML/gui/cells/setOnMouseDraggedSequence.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/sequences/drag/setOnMouseDraggedSequence.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/PUML/gui/cells/setOnMouseReleased.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/sequences/drag/setOnMouseReleased.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/PUML/data/DataPackageFull.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/PUML/data/DataPackageFull.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -348,10 +313,10 @@
     <state x="128" y="23" width="997" height="716" key="SettingsEditor/0.23.1280.716@0.23.1280.716" timestamp="1610495219114" />
     <state x="128" y="23" key="SettingsEditor/0.23.1280.721@0.23.1280.721" timestamp="1609902337637" />
     <state x="128" y="23" width="997" height="722" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1609206982415" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1610841080465">
+    <state width="500" height="445" key="SwitcherDM" timestamp="1610856798992">
       <screen x="0" y="23" width="1280" height="715" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/0.23.1280.715@0.23.1280.715" timestamp="1610841080465" />
+    <state width="500" height="445" key="SwitcherDM/0.23.1280.715@0.23.1280.715" timestamp="1610856798992" />
     <state width="500" height="445" key="SwitcherDM/0.23.1280.716@0.23.1280.716" timestamp="1610510143163" />
     <state width="500" height="449" key="SwitcherDM/0.23.1280.721@0.23.1280.721" timestamp="1609719027066" />
     <state width="500" height="450" key="SwitcherDM/0.23.1280.724@0.23.1280.724" timestamp="1608921079895" />
