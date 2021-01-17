@@ -8,7 +8,7 @@
   <h3 align="center">4wards</h3>
 
   <p align="center">
-    An tool for independent learners
+    A tool for independent learners
     <br />
   </p>
 </p>
