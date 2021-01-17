@@ -20,9 +20,9 @@ cloud back-up and a mobile client.
  
 ### Description
 It's an effort tracker designed specifically for the independent learner. 
-What sets it apart is its clock-out dialogue, 
-which allows a user to easily associate a work session with <i>multiple</i> 
-work topics. In that dialogue, other specific info is collected and then used
+What sets it apart is its clock-out dialogue, which allows a user to 
+easily associate a work session with <i>multiple</i> work topics, in varying 
+amounts. In that dialogue, other specific info is collected and then used
 to generate visualizations. The goal is to bring the user into a loop 
 of generating and relishing gratifying data generated from recorded 
 productivity time.
