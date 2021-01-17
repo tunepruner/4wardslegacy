@@ -1,3 +1,0 @@
-@startuml
-!include DataPackageFull.puml
-@enduml
