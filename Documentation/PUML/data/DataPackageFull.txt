@@ -1,0 +1,17 @@
+@startuml
+User "1" *-- "0..*" Direction
+Direction "1" *-- "0...*" Push
+Direction "1" *-- "0...*" Day
+Day "1" *-- "1" Log
+Day "1" *-- "1" Plan
+Plan "1" *-- "0...*" PlanItem
+Day "1" *-- "1" AdjustedPlan
+AdjustedPlan "1" *-- "0...*" AdjustedPlanItem
+Log "1" *-- "0...*" ClockTimeEntry
+ClockTimeEntry"1"  *-- "1...*" TimeAllotment
+PlanItem "1" *-- "1" Topic
+AdjustedPlanItem "1" *-- "1" Topic
+TimeAllotment "1" *-- "1" Topic
+
+hide members
+@enduml

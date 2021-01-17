@@ -30,6 +30,7 @@
       <change afterPath="$PROJECT_DIR$/Documentation/PUML/gui/dayseditor/cell/sequences/drag/DragOverAnother.puml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Documentation/PUML/layerinteraction/DaysEditorLayers.puml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Documentation/PUML/layerlevel/DataNeededPerWindow.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/PUML/layerlevel/DataNeededPerWindow.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Documentation/PUML/data/DaysFull.puml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Documentation/PUML/data/dao_layer.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/PUML/layerlevel/dao_layer.puml" afterDir="false" />
