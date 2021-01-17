@@ -1,0 +1,54 @@
+@startuml
+!include ../data/Declarations.puml!User
+!include ../data/Declarations.puml!Direction
+!include ../data/Declarations.puml!Push
+!include ../data/Declarations.puml!Day
+!include ../data/Declarations.puml!Log
+!include ../data/Declarations.puml!ClockTimeEntry
+!include ../data/Declarations.puml!TimeAllotment
+!include ../data/Declarations.puml!Plan
+!include ../data/Declarations.puml!PlanItem
+!include ../data/Declarations.puml!AdjustedPlan
+!include ../data/Declarations.puml!AdjustedPlanItem
+!include ../data/Declarations.puml!Topic
+
+User *- Direction
+Direction *- Day
+Direction *- Push
+Day *- Log
+Day *- Plan
+Day *- AdjustedPlan
+Log *- ClockTimeEntry
+ClockTimeEntry *- TimeAllotment
+Plan *- PlanItem
+AdjustedPlan *- AdjustedPlanItem
+Topic *- ClockTimeEntry
+Topic *- PlanItem
+Topic *- AdjustedPlanItem
+
+Direction ---- DaysEditor: view/edit
+Day ---- DaysEditor: view
+Plan ---- DaysEditor: view
+AdjustedPlan ---- DaysEditor: view
+Log ---- DaysEditor: view
+
+PlanEditor ---- Plan: view
+PlanEditor ---- AdjustedPlan: view
+PlanEditor ---- Log: view
+
+Plan ---- BreakdownEditor : view
+PlanItem ---- BreakdownEditor : view/edit
+AdjustedPlan ---- BreakdownEditor: view
+AdjustedPlanItem ---- BreakdownEditor: view/edit
+Log ---- BreakdownEditor: view
+
+
+ClockTimeEntry ----  ClockOutEditor: view/edit
+TimeAllotment ----  ClockOutEditor: view/edit
+
+StatsView ---- Direction: view
+StatsView ---- Day: view
+
+
+hide members 
+@enduml

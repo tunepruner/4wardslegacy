@@ -7,8 +7,12 @@ TabPane --* CenterPane
 
 
 package dayseditor{
-class DaysEditorData
+class DaysEditorData<DayCellData><<DaysEditorDao>>
+class DayCellData
 class DaysEditor
+
+DaysEditorData -* DayCellData
+DaysEditor -* DaysEditorData
 }
 package planeditor{
 interface dao.PlanEditorDao

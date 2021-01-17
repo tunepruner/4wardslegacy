@@ -1,0 +1,21 @@
+@startuml
+
+package dao{
+interface DaysEditorDao{
+add(Day day)
+remove(int ID)
+replace(int ID, )
+switch(int ID, int ID)
+changeDate(int ID, LocalDate date)
+readDao()
+}
+}
+
+package dayseditor{
+class DaysEditor{
+DaysEditorDao dao
+}
+
+DaysEditor -* DaysEditorDao
+}
+@enduml

@@ -1,6 +1,6 @@
 @startuml
 package "persistence" as persistence{
-interface DaysList
+interface DaysList<DayListItem>
 interface DayListItem
 
 

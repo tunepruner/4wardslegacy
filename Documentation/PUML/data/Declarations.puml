@@ -1,0 +1,78 @@
+@startuml(id=User)
+class User{
+List<Direction> directions
+}
+@enduml
+
+@startuml(id=Direction)
+class Direction{
+List<Push> pushes
+List<Day> days
+}
+@enduml
+
+@startuml(id=Push)
+class Push{
+String title
+LocalDate startDate
+LocalDate endDate
+}
+@enduml
+
+@startuml(id=Day)
+class Day{
+Log log
+Plan plan
+AdjustedPlan adjustedPlan
+}
+@enduml
+
+@startuml(id=Log)
+class Log{
+List<ClockTimeEntry>
+}
+@enduml
+
+@startuml(id=Plan)
+class Plan{
+List<PlanItem> plan
+}
+@enduml
+
+@startuml(id=PlanItem)
+class PlanItem{
+Topic topic
+Duration duration
+}
+@enduml
+
+@startuml(id=AdjustedPlanItem)
+class AdjustedPlanItem{
+Duration duration
+}
+@enduml
+
+@startuml(id=AdjustedPlan)
+class AdjustedPlan{
+List<AdjustedPlanItem> adjustedPlan
+}
+@enduml
+
+@startuml(id=ClockTimeEntry)
+class ClockTimeEntry{
+List<TimeAllotment> timeAllotments
+}
+@enduml
+
+@startuml(id=TimeAllotment)
+class TimeAllotment{
+Topic topic
+int percentage
+}
+@enduml
+
+@startuml(id=Topic)
+class Topic{
+String title
+}
+@enduml

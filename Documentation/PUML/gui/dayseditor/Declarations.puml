@@ -1,0 +1,349 @@
+@startuml(id=Cell)
+abstract class Cell{
+-CellData day
+-CellDesigner
+-CellPlacement
+-CellAnimationBehavior
+-CellMouseBehavior
++prepareCell()
++displayCell()
+{abstract} isDraggedCell()
+}
+@enduml
+
+@startuml(id=CellGrid)
+interface CellGrid{
++checkIfChanged()
+-getZone()
+}
+@enduml
+
+@startuml(id=CellList)
+interface CellList{
++indexOf(int ID)
++contains(int ID)
++remove(int ID)
++add(E)
++replace(E)
++moveTo(E e, int index)
++getZone(Point placement)
++addObserver()
++startDrag(int ID)
+-setDraggedCell(int thisID)
+-insertPlaceholder(int thisID)
+-onMoveTo()
+-onFinishedMoving()
+}
+@enduml
+
+@startuml(id=CellListFullFeatured)
+class CellListFullFeatured<<CellList>>{
+-List<E> dayCells
+-CellGrid
+-List<CellPlacement>
+-List<CellAnimationBehavior>
+-Cell draggedCell
+-PlaceholderCell placeHolder
+}
+@enduml
+
+@startuml(id=CellListNoPush)
+class CellListNoPush<<CellList>>
+@enduml
+
+@startuml(id=CellGridNoPush)
+class CellGridNoPush
+@enduml
+
+@startuml(id=CellGridFullFeatured)
+class CellGridFullFeatured{
+-final Map<LocalDate, Point> grid
+}
+@enduml
+
+@startuml(id=CellDesigner)
+interface CellDesigner{
+-CellData day
+-int width
+-int height
+-int padding
++createDesign()
++getContainer()
+}
+@enduml
+
+@startuml(id=CellPlacement)
+interface CellPlacement<<Observer>>{
+-CellGrid
+-CellData day
+-CellList
+-Point placement
+-List<Observer>
+-Node container
+-setPosition()
++followDrag(int x, int y)
+-updateListIndex()
++placeAtNewZone()
++update()
+}
+@enduml
+
+@startuml(id=CellMouseBehavior)
+interface CellMouseBehavior{
+-CellList
+-CellPlacement
+-Node container
++setOnMouseOver()
++setOnMouseClicked()
++setOnMousePressed()
++setOnMouseDragged()
++setOnMouseReleased()
++handle()
+}
+@enduml
+
+@startuml(id=CellAnimationBehavior)
+interface CellAnimationBehavior<<Observer>>{
+-CellPlacement
+-Node container
++animateIn();
++animateOut();
++animateTo();
++update()
+}
+@enduml
+
+@startuml(id=CellData)
+interface CellData{
+LocalDate date
+Duration totalTime
+Duration timeRemaining
+}
+@enduml
+
+
+@startuml(id=DaysEditor)
+interface DaysEditor{
+-final Point listAreaTopLeft
++final int listAreaHeight
++final int listAreaWidth
++final Theme theme
+-final CellList
++getTopLeft()
++getListAnchor()
++getStartAreaAnchor()
++populateListOfCells()
++displayAllCells(Pane)
++handleScrolling(Pane)
++createState()
+}
+@enduml
+
+@startuml(id=FullDaysEditor)
+class FullDaysEditor{
+}
+@enduml
+
+@startuml(id=DayAdderButton)
+class DayAdderButton
+@enduml
+
+@startuml(id=PushAdderButton)
+class PushAdderButton
+@enduml
+
+@startuml(id=PlaceholderCell)
+class PlaceholderCell{
+@Override prepareCell()
+}
+@enduml
+
+@startuml(id=PushStartCell)
+class PushStartCell{
+@Override prepareCell()
+}
+@enduml
+
+@startuml(id=PushEndCell)
+class PushEndCell{
+@Override prepareCell()
+}
+@enduml
+
+@startuml(id=DayCell)
+class DayCell{
+@Override prepareCell()
+}
+@enduml
+
+@startuml(id=DayCellDesigner)
+class DayCellDesigner<<CellDesigner>>{
+-CellData day
+-int width
+-int height
+-int padding
++createDesign()
++getContainer()
+}
+@enduml
+
+@startuml(id=DayCellPlacement)
+class DayCellPlacement<<CellPlacement>>{
+-CellGrid
+-CellData day
+-CellList
+-Point placement
+-List<Observer>
+-Node container
+-setPosition()
++followDrag(int x, int y)
+-updateListIndex()
++placeAtNewZone()
++update()
+}
+@enduml
+
+@startuml(id=FutureDayCellMouseBehavior)
+class FutureDayCellMouseBehavior<<CellMouseBehavior>>{
+-CellList
+-CellPlacement
+-Node container
++setOnMouseOver()
++setOnMouseClicked()
++setOnMousePressed()
++setOnMouseDragged()
++setOnMouseReleased()
++handle()
+}
+@enduml
+
+@startuml(id=PastDayCellMouseBehavior)
+class PastDayCellMouseBehavior<<CellMouseBehavior>>{
+-CellList
+-CellPlacement
+-Node container
++setOnMouseOver()
++setOnMouseClicked()
++setOnMousePressed()
++setOnMouseDragged()
++setOnMouseReleased()
++handle()
+}
+@enduml
+
+@startuml(id=DayCellAnimationBehavior)
+class DayCellAnimationBehavior<<CellAnimationBehavior>>{
+-CellPlacement
+-Node container
++animateIn();
++animateOut();
++animateTo();
++update()
+}
+@enduml
+
+@startuml(id=DayCellData)
+class DayCellData<<CellData>>{
+LocalDate date
+Duration totalTime
+Duration timeRemaining
+}
+@enduml
+
+@startuml(id=PushCellData)
+class PushCellData<<CellData>>{
+LocalDate date
+Duration totalTime
+Duration timeRemaining
+}
+@enduml
+
+@startuml(id=PushCellDesigner)
+class PushCellDesigner<<CellDesigner>>{
+-CellData day
+-int width
+-int height
+-int padding
++createDesign()
++getContainer()
+}
+@enduml
+
+@startuml(id=PushCellPlacement)
+class PushCellPlacement<<CellPlacement>>{
+-CellGrid
+-CellData day
+-CellList
+-Point placement
+-List<Observer>
+-Node container
+-setPosition()
++followDrag(int x, int y)
+-updateListIndex()
++placeAtNewZone()
++update()
+}
+@enduml
+
+@startuml(id=FuturePushCellMouseBehavior)
+class FuturePushCellMouseBehavior<<CellMouseBehavior>>{
+-CellList
+-CellPlacement
+-Node container
++setOnMouseOver()
++setOnMouseClicked()
++setOnMousePressed()
++setOnMouseDragged()
++setOnMouseReleased()
++handle()
+}
+@enduml
+
+@startuml(id=PastPushCellMouseBehavior)
+class PastPushCellMouseBehavior<<CellMouseBehavior>>{
+-CellList
+-CellPlacement
+-Node container
++setOnMouseOver()
++setOnMouseClicked()
++setOnMousePressed()
++setOnMouseDragged()
++setOnMouseReleased()
++handle()
+}
+@enduml
+
+@startuml(id=PushCellAnimationBehavior)
+class PushCellAnimationBehavior<<CellAnimationBehavior>>{
+-CellPlacement
+-Node container
++animateIn();
++animateOut();
++animateTo();
++update()
+}
+@enduml
+
+@startuml(id=PushCellData)
+class PushCellData<<CellData>>{
+LocalDate date
+Duration totalTime
+Duration timeRemaining
+}
+@enduml
+
+@startuml(id=History)
+class History{
+List<DaysEditorState>
+addState()
+undo()
+redo()
+}
+@enduml
+
+@startuml(id=DaysEditorState)
+class DaysEditorState{
+- final CellList state
+getState()
+}
+@enduml

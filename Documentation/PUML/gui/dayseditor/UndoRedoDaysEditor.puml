@@ -1,0 +1,5 @@
+@startuml
+
+
+DaysEditor ..> DaysEditorState
+@enduml

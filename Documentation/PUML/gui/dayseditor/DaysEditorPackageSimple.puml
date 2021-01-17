@@ -1,0 +1,35 @@
+@startuml
+class DaysEditor
+abstract class Cell
+class CellList
+interface CellDesign
+interface CellMouseBehavior
+interface CellAnimationBehavior
+interface CellPlacement
+interface CellGrid
+interface CellData
+class DayCell
+class PlaceholderCell
+class PushStartCell
+class PushEndCell
+
+DaysEditor -* CellList
+Cell --* CellPlacement
+Cell --* CellMouseBehavior
+Cell --* CellAnimationBehavior
+Cell --* CellDesign
+Cell --* CellData
+CellList --* CellGrid
+CellList --* Cell
+CellDesign --* CellData
+CellMouseBehavior --* CellList
+CellMouseBehavior --* CellPlacement
+CellAnimationBehavior --* CellPlacement
+CellPlacement --* CellGrid
+CellPlacement --* CellData
+CellPlacement --* CellList
+DayCell --|> Cell
+PlaceholderCell --|> Cell
+PushStartCell --|> Cell
+PushEndCell --|> Cell
+@enduml

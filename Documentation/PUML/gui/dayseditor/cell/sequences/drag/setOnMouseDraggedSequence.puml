@@ -1,0 +1,65 @@
+@startuml
+autonumber "<b>[000]"
+participant dragged.CellMouseBehavior as dCellMouseBehavior
+participant dragged.CellList as dCellList
+participant dragged.CellPlacement as dCellPlacement
+participant CellPlacement as CellPlacement
+participant dragged.CellGrid as dCellGrid
+
+-> dCellMouseBehavior:setOn\nMouse\nDragged()
+dCellMouseBehavior -> dCellList++: startDrag(thisID)
+dCellList -> dCellList++: setDraggedCell(thisID)
+dCellList -> dCellList++: insertPlaceholder(thisID)
+return
+return
+return
+
+dCellMouseBehavior -> dCellPlacement++: followDrag()
+dCellPlacement -> dCellPlacement++: setPosition()
+dCellPlacement -> dCellPlacement++: updateZone()
+dCellPlacement -> dCellGrid++: getZone()
+return
+alt ifSame
+dCellPlacement --> dCellMouseBehavior
+else else
+== Trigger all cells updates ==
+
+
+dCellPlacement -> dCellList++: moveTo()
+dCellList -> dCellList++: onMoveTo()
+
+loop forEachObserver
+dCellList -> CellPlacement++: update()
+alt ifDraggedCell
+CellPlacement --> dCellList
+else else
+CellPlacement -> CellPlacement++: placeAtNewZone()
+return
+return
+end
+end loop
+dCellList -> dCellList++: onFinished\nMoving()
+loop forEachObserver
+dCellList -> CellAnimationBehavior++: update()
+alt ifDraggedCell
+return
+else else
+CellAnimationBehavior -> CellAnimationBehavior++: ifNotDraggedCell()
+CellAnimationBehavior -> CellAnimationBehavior++: animateTo()
+return
+return
+return
+return
+return
+end
+end loop
+
+== Done with updates ==
+
+return
+return
+return
+end
+@enduml
+
+

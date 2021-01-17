@@ -1,0 +1,17 @@
+@startuml
+Actor User
+User -> Bob: Start
+box "Internal Service" #LightBlue
+Bob -> Alice++
+Alice -> Other**: new
+Alice -> Other!!: delete
+Alice -> Other**: new
+return
+end box
+participant "Famous Dan" as Dan << Generated >>
+participant Jane << (C,#ADD1B2) Testable >>
+participant June << (o,#ADD1B2) Testable >>
+participant Jean << (I,#777777) Testable >>
+participant John << (z,#ADD1B2) Testable >>
+
+@enduml
