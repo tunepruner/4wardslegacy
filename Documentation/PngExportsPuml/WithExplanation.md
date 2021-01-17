@@ -23,10 +23,10 @@ This package is receiving attention before the other editors, since it is the fi
 Shows how the DaysEditor class relates to Dao layer
 ![DaysEditorLayers.png](DaysEditorLayers.png)
 
-Birdeye view of the dayseditor package
+Birdseye view of the dayseditor package
 ![CellPackageFull.png](CellPackageFull.png)
 
-This the drag behavior of the day cells is arguably the biggest challenge in this editor. 
+The drag behavior of the day cells is arguably the biggest challenge in this editor. 
 ![](setOnMouseDraggedSequence.png)
 
 ![](setOnMouseReleased.png)

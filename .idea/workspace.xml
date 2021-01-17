@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac3e2c89-37d1-41a7-bac6-b3f85d8f1abf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Documentation/PngExportsPuml/WithExplanation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/PUML/data/DataPackageFull.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/PUML/forREADME/forREADME.md" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/PUML/forREADME/forREADME.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/PUML/layerlevel/DataNeededPerWindow.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/PngExportsPuml/CellStructureFull.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/PngExportsPuml/WithExplanation.md" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/PngExportsPuml/WithExplanation.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -316,10 +311,10 @@
     <state x="128" y="23" width="997" height="716" key="SettingsEditor/0.23.1280.716@0.23.1280.716" timestamp="1610495219114" />
     <state x="128" y="23" key="SettingsEditor/0.23.1280.721@0.23.1280.721" timestamp="1609902337637" />
     <state x="128" y="23" width="997" height="722" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1609206982415" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1610857435567">
+    <state width="500" height="445" key="SwitcherDM" timestamp="1610859414243">
       <screen x="0" y="23" width="1280" height="715" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/0.23.1280.715@0.23.1280.715" timestamp="1610857435567" />
+    <state width="500" height="445" key="SwitcherDM/0.23.1280.715@0.23.1280.715" timestamp="1610859414243" />
     <state width="500" height="445" key="SwitcherDM/0.23.1280.716@0.23.1280.716" timestamp="1610510143163" />
     <state width="500" height="449" key="SwitcherDM/0.23.1280.721@0.23.1280.721" timestamp="1609719027066" />
     <state width="500" height="450" key="SwitcherDM/0.23.1280.724@0.23.1280.724" timestamp="1608921079895" />

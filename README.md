@@ -62,7 +62,8 @@ In the directory Documentation/4wardsConcept, you can find:
 - a [problem statement](Documentation/4wardsConcept/ProblemStatements.md),
 - a [product vision](Documentation/4wardsConcept/ProductVision.md),
 - the [MVP requirements](Documentation/4wardsConcept/MVP.md),
-- the [post MVP overflow](Documentation/4wardsConcept/PostMvpOverflow.md),
+- the [post MVP overflow](Documentation/4wardsConcept/PostMvpOverflow.md)
+- a [collection of diagrams](Documentation/PUML) written in plant uml code that are maintained in version control as the evolve. Since github doesn't have a plant uml parser (yet), [here are some rendered images](Documentation/PngExportsPuml/WithExplanation.md) to look at
 
 ## License
 
